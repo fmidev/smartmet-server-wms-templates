@@ -1,0 +1,18 @@
+{
+    "title" : "Wind Speed",
+    "abstract" : "Wind Speed 10m from GFS",
+    "projection": {},
+    "producer": "gem_world_surface",
+    "views": [{
+        "layers": [{
+            "qid": "l",
+            "layer_type": "isoband",
+            "isobands": "json:isobands/wind.json",
+            "css": "isobands/wind.css",
+            "parameter": "WindSpeedMS",
+            "attributes": {
+                "shape-rendering": "crispEdges"
+            }
+        }]
+    }]
+}

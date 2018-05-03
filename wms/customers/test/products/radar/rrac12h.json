@@ -1,0 +1,18 @@
+{
+    "title" : "12h rain accumulation",
+    "abstract" : "12h rain accumulation [mm]",
+    "projection": {},
+    "producer": "radar_nassau_acrr12h",
+    "views": [{
+        "layers": [{
+            "qid": "l",
+            "layer_type": "isoband",
+            "isobands": "json:isobands/rracc12h.json",
+            "css": "isobands/rracc12h.css",
+            "parameter": "PrecipitationAmount",
+            "attributes": {
+                "shape-rendering": "crispEdges"
+            }
+        }]
+    }]
+}

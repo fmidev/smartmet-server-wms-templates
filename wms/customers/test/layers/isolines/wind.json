@@ -1,0 +1,53 @@
+[
+    {
+	"attributes": {
+	    "class": "Wind3"
+	},
+        "qid": "Wind3",
+        "value": 3.0
+    },
+    {
+	"attributes": {
+	    "class": "Wind5"
+	},
+        "qid": "Wind5",
+        "value": 5.0
+    },
+    {
+	"attributes": {
+	    "class": "Wind7"
+	},
+        "qid": "Wind7",
+        "value": 7.0
+    },
+    {
+	"attributes": {
+	    "class": "Wind10"
+	},
+        "qid": "Wind10",
+        "value": 10.0
+    },
+    {
+	"attributes": {
+	    "class": "Wind14"
+	},
+        "qid": "Wind14",
+        "value": 14.0
+    },
+    {
+	"attributes": {
+	    "class": "Wind17"
+	},
+        "qid": "Wind17",
+        "value": 17.0
+    },
+    {
+	"attributes": {
+	    "class": "Wind21"
+	},
+        "qid": "Wind21",
+        "value": 21.0
+    }
+    
+]
+

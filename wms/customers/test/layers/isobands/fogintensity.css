@@ -1,0 +1,6 @@
+/*  32700 = none */
+/*  0 = no fog */
+/*  1 = moderate fog */
+/*  2 = dense fog */
+.FogIntensity_05_15	{ stroke: none; fill: rgba(245,245,115,1.00); }
+.FogIntensity_15_25	{ stroke: none; fill: rgba(242,157,46,1.00); }

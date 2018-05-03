@@ -1,0 +1,52 @@
+{
+    "title" : "Wind Speed",
+    "abstract" : "Wind Speed 10m from GFS (extremely cool example)",
+    "projection": {},
+    "producer": "gem_world_surface",
+    "views": [{
+        "layers": [
+        {
+            "qid": "l",
+            "layer_type": "isoband",
+            "isobands": "json:isobands/wind.json",
+            "css": "isobands/wind.css",
+            "parameter": "WindSpeedMS",
+            "attributes": {
+                "shape-rendering": "crispEdges"
+            }
+        },
+	{
+            "qid": "l",
+            "layer_type": "isoline",
+            "isolines": "json:isolines/wind.json",
+            "css": "isolines/wind.css",
+            "parameter": "WindSpeedMS",
+            "attributes": {
+                "shape-rendering": "crispEdges"
+            }
+        },
+        {
+            "qid": "arr-",
+            "layer_type": "arrow",
+            "css": "wind/arrows/windarrow.css",
+            "direction": "WindDirection",
+            "speed": "WindSpeedMS",
+            "attributes":
+            {
+                "id": "wind_arrows",
+                "class": "WindArrow",
+                "mask": "url(#windlegendmask)"
+            },
+            "arrows": "json:wind/arrows/windarrow.json",
+            "positions":
+            {
+                "x": 24,
+                "y": 14,
+                "dx": 32,
+                "dy": 32,
+                "ddx": 16
+            }
+         }
+       ]
+    }]
+}

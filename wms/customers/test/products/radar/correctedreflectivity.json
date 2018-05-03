@@ -1,0 +1,18 @@
+{
+    "title" : "PPI Corrected Reflectivity",
+    "abstract" : "Corrected Reflectivity in dBZ",
+    "projection": {},
+    "producer": "radar_nassau_ppi",
+    "views": [{
+        "layers": [{
+            "qid": "l",
+            "layer_type": "isoband",
+            "isobands": "json:isobands/correctedreflectivity.json",
+            "css": "isobands/correctedreflectivity.css",
+            "parameter": "CorrectedReflectivity",
+            "attributes": {
+                "shape-rendering": "crispEdges"
+            }
+        }]
+    }]
+}

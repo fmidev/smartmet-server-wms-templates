@@ -1,0 +1,65 @@
+[
+    {
+        "attributes": {
+            "class": "HighCloudCover_11_22"
+        },
+        "hilimit": 22,
+        "lolimit": 11,
+        "qid": "HighCloudCover_11_22"
+    },
+    {
+        "attributes": {
+            "class": "HighCloudCover_22_33"
+        },
+        "hilimit": 33,
+        "lolimit": 22,
+        "qid": "HighCloudCover_22_33"
+    },
+    {
+        "attributes": {
+            "class": "HighCloudCover_33_44"
+        },
+        "hilimit": 44,
+        "lolimit": 33,
+        "qid": "HighCloudCover_33_44"
+    },
+    {
+        "attributes": {
+            "class": "HighCloudCover_44_55"
+        },
+        "hilimit": 55,
+        "lolimit": 44,
+        "qid": "HighCloudCover_44_55"
+    },
+    {
+        "attributes": {
+            "class": "HighCloudCover_55_66"
+        },
+        "hilimit": 66,
+        "lolimit": 55,
+        "qid": "HighCloudCover_55_66"
+    },
+    {
+        "attributes": {
+            "class": "HighCloudCover_66_77"
+        },
+        "hilimit": 77,
+        "lolimit": 66,
+        "qid": "HighCloudCover_66_77"
+    },
+    {
+        "attributes": {
+            "class": "HighCloudCover_77_88"
+        },
+        "hilimit": 88,
+        "lolimit": 77,
+        "qid": "HighCloudCover_77_88"
+    },
+    {
+        "attributes": {
+            "class": "HighCloudCover_88"
+        },
+        "lolimit": 88,
+        "qid": "HighCloudCover_88"
+    }
+]

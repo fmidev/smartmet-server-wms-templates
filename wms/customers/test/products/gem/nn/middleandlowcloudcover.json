@@ -1,0 +1,18 @@
+{
+    "title" : "MiddleAndLowCloudCover",
+    "abstract" : "Top Middle+Low Cloud Cover from GFS",
+    "projection": {},
+    "producer": "gem_world_surface",
+    "views": [{
+        "layers": [{
+            "qid": "l",
+            "layer_type": "isoband",
+            "parameter": "MiddleAndLowCloudCover",
+            "isobands": "json:isobands/middleandlowcloudcover.json",
+            "css": "isobands/middleandlowcloudcover.css",
+            "attributes": {
+                "shape-rendering": "crispEdges"
+            }
+        }]
+    }]
+}

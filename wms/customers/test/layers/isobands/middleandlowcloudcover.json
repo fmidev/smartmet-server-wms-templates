@@ -1,0 +1,65 @@
+[
+    {
+        "attributes": {
+            "class": "MiddleAndLowCloudCover_11_22"
+        },
+        "hilimit": 22,
+        "lolimit": 11,
+        "qid": "MiddleAndLowCloudCover_11_22"
+    },
+    {
+        "attributes": {
+            "class": "MiddleAndLowCloudCover_22_33"
+        },
+        "hilimit": 33,
+        "lolimit": 22,
+        "qid": "MiddleAndLowCloudCover_22_33"
+    },
+    {
+        "attributes": {
+            "class": "MiddleAndLowCloudCover_33_44"
+        },
+        "hilimit": 44,
+        "lolimit": 33,
+        "qid": "MiddleAndLowCloudCover_33_44"
+    },
+    {
+        "attributes": {
+            "class": "MiddleAndLowCloudCover_44_55"
+        },
+        "hilimit": 55,
+        "lolimit": 44,
+        "qid": "MiddleAndLowCloudCover_44_55"
+    },
+    {
+        "attributes": {
+            "class": "MiddleAndLowCloudCover_55_66"
+        },
+        "hilimit": 66,
+        "lolimit": 55,
+        "qid": "MiddleAndLowCloudCover_55_66"
+    },
+    {
+        "attributes": {
+            "class": "MiddleAndLowCloudCover_66_77"
+        },
+        "hilimit": 77,
+        "lolimit": 66,
+        "qid": "MiddleAndLowCloudCover_66_77"
+    },
+    {
+        "attributes": {
+            "class": "MiddleAndLowCloudCover_77_88"
+        },
+        "hilimit": 88,
+        "lolimit": 77,
+        "qid": "MiddleAndLowCloudCover_77_88"
+    },
+    {
+        "attributes": {
+            "class": "MiddleAndLowCloudCover_88"
+        },
+        "lolimit": 88,
+        "qid": "MiddleAndLowCloudCover_88"
+    }
+]

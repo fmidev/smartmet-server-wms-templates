@@ -1,0 +1,18 @@
+{
+    "title" : "Significant wave height",
+    "abstract" : "WWW3 model significant wave height",
+    "projection": {},
+    "producer": "ww3_caribbean",
+    "views": [{
+        "layers": [{
+            "qid": "l",
+            "layer_type": "isoband",
+            "parameter": "SigWaveHeight",
+            "isobands": "json:isobands/sigwaveheight.json",
+            "css": "isobands/sigwaveheight.css",
+            "attributes": {
+                "shape-rendering": "crispEdges"
+            }
+        }]
+    }]
+}
