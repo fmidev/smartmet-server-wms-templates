@@ -1,5 +1,5 @@
-.rracc_1_2  { display: none }
-.rracc_2_5  { display: none }
+.rracc_1_2  { stroke: none; fill: #007eff }
+.rracc_2_5  { stroke: none; fill: #00beff }
 .rracc_5_10  { stroke: none; fill: #00ffff }
 .rracc_10_20  { stroke: none; fill: #00f7c6 }
 .rracc_20_30  { stroke: none; fill: #18d78c }
