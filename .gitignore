@@ -1,0 +1,3 @@
+node_modules/
+# Local README file added by the CI workflow, use README.md for the actual documentation
+README
