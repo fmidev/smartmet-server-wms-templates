@@ -1,0 +1,17 @@
+{
+    "title" : "Temperature isolines",
+    "abstract" : "Temperature isolines from default model producer",
+    "projection": {},
+    "views": [{
+        "layers": [{
+            "qid": "l",
+            "layer_type": "isoline",
+            "isolines": "json:isolines/temperature.json",
+            "css": "isolines/temperature.css",
+            "parameter": "Temperature",
+            "attributes": {
+                "shape-rendering": "crispEdges"
+            }
+        }]
+    }]
+}

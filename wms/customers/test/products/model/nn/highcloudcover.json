@@ -1,0 +1,21 @@
+{
+  "title": "High cloud cover",
+  "abstract": "Top high cloud cover from default model producer",
+  "projection": {},
+  "views": [
+    {
+      "layers": [
+        {
+          "qid": "l",
+          "layer_type": "isoband",
+          "parameter": "HighCloudCover",
+          "isobands": "json:isobands/highcloudcover.json",
+          "css": "isobands/highcloudcover.css",
+          "attributes": {
+            "shape-rendering": "crispEdges"
+          }
+        }
+      ]
+    }
+  ]
+}

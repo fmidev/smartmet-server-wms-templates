@@ -1,0 +1,17 @@
+{
+    "title" : "Pressure isolines",
+    "abstract" : "Pressure isolines from default model producer",
+    "projection": {},
+    "views": [{
+        "layers": [{
+            "qid": "l",
+            "layer_type": "isoline",
+            "parameter": "Pressure",
+            "isolines": "json:isolines/Pressure.json",
+            "css": "isolines/Pressure.css",
+            "attributes": {
+                "shape-rendering": "crispEdges"
+            }
+        }]
+    }]
+}

@@ -1,0 +1,17 @@
+{
+    "title" : "Relative humidity",
+    "abstract" : "Relative humidity 2m from default model producer",
+    "projection": {},
+    "views": [{
+        "layers": [{
+            "qid": "l",
+            "layer_type": "isoband",
+            "isobands": "json:isobands/relativehumidity.json",
+            "css": "isobands/relativehumidity.css",
+            "parameter": "Humidity",
+            "attributes": {
+                "shape-rendering": "crispEdges"
+            }
+        }]
+    }]
+}

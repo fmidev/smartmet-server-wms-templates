@@ -1,0 +1,46 @@
+{
+  "title": "Mean wind speed windbarbs",
+  "abstract": "Mean wind speed forecast in knots with meteorological windbarbs from default model producer",
+  "projection": {
+    "crs": "EPSG:4326",
+    "cx": 25,
+    "cy": 65,
+    "resolution": 1,
+    "xsize": 500,
+    "ysize": 500
+  },
+  "views": [
+    {
+      "qid": "v1",
+      "attributes": {
+        "id": "view1"
+      },
+      "layers": [
+        {
+          "qid": "l2",
+          "layer_type": "arrow",
+          "arrows": "json:wind/arrows/windbarb.json",
+          "css": "wind/arrows/windbarb.css",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "multiplier": 1.9438445,
+          "southflop": true,
+          "scale": 1.0,
+          "margin": 250,
+          "treshold": 2.5,
+          "attributes": {
+            "id": "wind_arrows"
+          },
+          "symbol": "dot",
+          "positions": {
+            "x": 24,
+            "y": 14,
+            "dx": 32,
+            "dy": 32,
+            "ddx": 16
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+    "title" : "Wind speed isolines",
+    "abstract" : "Wind speed 10m from default model producer",
+    "projection": {},
+    "views": [{
+        "layers": [{
+            "qid": "l",
+            "layer_type": "isoline",
+            "isolines": "json:isolines/wind.json",
+            "css": "isolines/wind.css",
+            "parameter": "WindSpeedMS",
+            "attributes": {
+                "shape-rendering": "crispEdges"
+            }
+        }]
+    }]
+}

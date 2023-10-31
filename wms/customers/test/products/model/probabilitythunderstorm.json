@@ -1,0 +1,17 @@
+{
+    "title" : "Probability of thunderstorm",
+    "abstract" : "Probability of thunderstorm from default model producer",
+    "projection": {},
+    "views": [{
+        "layers": [{
+            "qid": "l",
+            "layer_type": "isoband",
+            "isobands": "json:isobands/probability.json",
+            "css": "isobands/probability.css",
+            "parameter": "ProbabilityThunderstorm",
+            "attributes": {
+                "shape-rendering": "crispEdges"
+            }
+        }]
+    }]
+}
