@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:jsonc/recommended-with-jsonc"
+  ],
+  "plugins": [
+    "jsonc"
+  ],
+  "rules": {
+    "jsonc/indent": [
+      "error",
+      2
+    ],
+    "jsonc/comma-dangle": "error",
+    "no-mixed-spaces-and-tabs": 0
+  }
+}

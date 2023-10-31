@@ -1,0 +1,28 @@
+{
+  "name": "smartmet-server-wms-templates",
+  "description": "Templates for SmartMet Server WMS plugin's configuration files",
+  "homepage": "https://github.com/fmidev/smartmet-server-wms-templates",
+  "bugs": {
+    "url": "https://github.com/fmidev/smartmet-server-wms-templates/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmidev/smartmet-server-wms-templates.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "npx stylelint '**/*.css' && npx eslint --ext .json,.jsonc . && ./validate-xml.sh && ./validate-svg.sh",
+    "test:css": "npx stylelint '**/*.css'",
+    "test:jsonc": "npx eslint --ext .json,.jsonc .",
+    "test:jsonc-fix": "npx eslint --ext .json,.jsonc . --fix",
+    "test:svg": "./validate-svg.sh",
+    "test:xml": "./validate-xml.sh"
+  },
+  "dependencies": {
+    "eslint": "^8.48.0",
+    "eslint-plugin-jsonc": "^2.9.0",
+    "stylelint": "^15.10.3",
+    "stylelint-config-recommended": "^13.0.0",
+    "vnu-jar": "^23.4.11"
+  }
+}
