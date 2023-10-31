@@ -39,6 +39,23 @@ wms:
 
 TODO
 
+## Running tests
+
+```
+# Install required packages
+npm install
+
+# Run all tests test
+npm run test
+
+# Check syntax and style test separately
+npm run test:jsonc
+npm run test:css
+
+# Try to fix issues automatically
+npm run test:jsonc-fix
+```
+
 ## Deployment
 
 TODO
