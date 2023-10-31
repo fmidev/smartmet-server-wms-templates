@@ -20,7 +20,7 @@ language        = "en";
 languages       = "fi,en,sv";
 
 customer        = "fmi";
-root            = "/smartmet/cnf/smartmetd/wms-conf/dali";
+root            = "/smartmet/share/dali";
 
 .......
 
@@ -28,7 +28,7 @@ wms:
 {
    quiet        = true;
    url          = "/wms";
-   root         = "/home/users/ilkkav/koodia/smartmet-server-wms-templates/wms";
+   root         = "/smartmet/share/wms";
 
 ...
 ```
