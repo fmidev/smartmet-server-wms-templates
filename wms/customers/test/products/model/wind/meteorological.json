@@ -1,6 +1,7 @@
 {
   "title": "Mean wind speed windbarbs",
   "abstract": "Mean wind speed forecast in knots with meteorological windbarbs from default model producer",
+  "legend_url_layer": "test:legends:windbarb_legend",
   "projection": {
     "crs": "EPSG:4326",
     "cx": 25,
@@ -27,7 +28,6 @@
           "southflop": true,
           "scale": 1.0,
           "margin": 250,
-          "treshold": 2.5,
           "attributes": {
             "id": "wind_arrows"
           },

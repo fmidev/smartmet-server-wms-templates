@@ -1,0 +1,109 @@
+{
+  "hidden": true,
+  "width": 420,
+  "height": 100,
+  "projection": {},
+  "views": [
+    {
+      "qid": "v1",
+      "attributes": {
+        "id": "view1"
+      },
+      "layers": [
+        {
+          "qid": "l1",
+          "x": 20,
+          "y": 45,
+          "dx": 30,
+          "dy": 0,
+          "layer_type": "legend",
+          "css": "wind/arrows/windbarb.css",
+          "symbols": [
+            {
+              "value": 5,
+              "symbol": "windbarb_5"
+            },
+            {
+              "value": 10,
+              "symbol": "windbarb_10"
+            },
+            {
+              "value": 15,
+              "symbol": "windbarb_15"
+            },
+            {
+              "value": 20,
+              "symbol": "windbarb_20"
+            },
+            {
+              "value": 25,
+              "symbol": "windbarb_25"
+            },
+            {
+              "value": 30,
+              "symbol": "windbarb_30"
+            },
+            {
+              "value": 35,
+              "symbol": "windbarb_35"
+            },
+            {
+              "value": 50,
+              "symbol": "windbarb_50"
+            },
+            {
+              "value": 55,
+              "symbol": "windbarb_55"
+            },
+            {
+              "value": 60,
+              "symbol": "windbarb_60"
+            },
+            {
+              "value": 65,
+              "symbol": "windbarb_65"
+            },
+            {
+              "value": 100,
+              "symbol": "windbarb_100"
+            },
+            {
+              "value": 105,
+              "symbol": "windbarb_105"
+            }
+          ],
+          "attributes": {
+            "transform": "scale(1.0)"
+          },
+          "labels": {
+            "type": "lolimit",
+            "dx": -5,
+            "dy": -5,
+            "attributes": {
+              "text-anchor": "left",
+              "font-family": "Roboto, Arial",
+              "font-size": "15px"
+            },
+            "conversions": {
+              "5": "5 kts"
+            }
+          },
+          "layers": [
+            {
+              "tag": "text",
+              "cdata": {
+                "en": "Wind barb (kts)",
+                "fi": "Tuulinuoli (solmua)"
+              },
+              "attributes": {
+                "y": 15,
+                "dx": 15,
+                "class": "Units"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
