@@ -1,65 +1,65 @@
 [
-    {
-        "attributes": {
-            "class": "TotalCloudCover_68_72"
-        },
-        "hilimit": 72,
-        "lolimit": 68,
-        "qid": "TotalCloudCover_68_72"
+  {
+    "attributes": {
+      "class": "TotalCloudCover_68_72"
     },
-    {
-        "attributes": {
-            "class": "TotalCloudCover_72_76"
-        },
-        "hilimit": 76,
-        "lolimit": 72,
-        "qid": "TotalCloudCover_72_76"
+    "hilimit": 72,
+    "lolimit": 68,
+    "qid": "TotalCloudCover_68_72"
+  },
+  {
+    "attributes": {
+      "class": "TotalCloudCover_72_76"
     },
-    {
-        "attributes": {
-            "class": "TotalCloudCover_76_80"
-        },
-        "hilimit": 80,
-        "lolimit": 76,
-        "qid": "TotalCloudCover_76_80"
+    "hilimit": 76,
+    "lolimit": 72,
+    "qid": "TotalCloudCover_72_76"
+  },
+  {
+    "attributes": {
+      "class": "TotalCloudCover_76_80"
     },
-    {
-        "attributes": {
-            "class": "TotalCloudCover_80_84"
-        },
-        "hilimit": 84,
-        "lolimit": 80,
-        "qid": "TotalCloudCover_80_84"
+    "hilimit": 80,
+    "lolimit": 76,
+    "qid": "TotalCloudCover_76_80"
+  },
+  {
+    "attributes": {
+      "class": "TotalCloudCover_80_84"
     },
-    {
-        "attributes": {
-            "class": "TotalCloudCover_84_88"
-        },
-        "hilimit": 88,
-        "lolimit": 84,
-        "qid": "TotalCloudCover_84_88"
+    "hilimit": 84,
+    "lolimit": 80,
+    "qid": "TotalCloudCover_80_84"
+  },
+  {
+    "attributes": {
+      "class": "TotalCloudCover_84_88"
     },
-    {
-        "attributes": {
-            "class": "TotalCloudCover_88_92"
-        },
-        "hilimit": 92,
-        "lolimit": 88,
-        "qid": "TotalCloudCover_88_92"
+    "hilimit": 88,
+    "lolimit": 84,
+    "qid": "TotalCloudCover_84_88"
+  },
+  {
+    "attributes": {
+      "class": "TotalCloudCover_88_92"
     },
-    {
-        "attributes": {
-            "class": "TotalCloudCover_92_96"
-        },
-        "hilimit": 96,
-        "lolimit": 92,
-        "qid": "TotalCloudCover_92_96"
+    "hilimit": 92,
+    "lolimit": 88,
+    "qid": "TotalCloudCover_88_92"
+  },
+  {
+    "attributes": {
+      "class": "TotalCloudCover_92_96"
     },
-    {
-        "attributes": {
-            "class": "TotalCloudCover_96"
-        },
-        "lolimit": 96,
-        "qid": "TotalCloudCover_96"
-    }
+    "hilimit": 96,
+    "lolimit": 92,
+    "qid": "TotalCloudCover_92_96"
+  },
+  {
+    "attributes": {
+      "class": "TotalCloudCover_96"
+    },
+    "lolimit": 96,
+    "qid": "TotalCloudCover_96"
+  }
 ]

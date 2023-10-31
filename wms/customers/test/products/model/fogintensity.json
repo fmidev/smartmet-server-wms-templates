@@ -1,17 +1,17 @@
 {
-    "title" : "Fog tntensity",
-    "abstract" : "Top density of fog fron default model producer",
-    "projection": {},
-    "views": [{
-        "layers": [{
-            "qid": "l",
-            "layer_type": "isoband",
-            "parameter": "FogIntensity",
-            "isobands": "json:isobands/fogintensity.json",
-            "css": "isobands/fogintensity.css",
-            "attributes": {
-                "shape-rendering": "crispEdges"
-            }
-        }]
+  "title" : "Fog tntensity",
+  "abstract" : "Top density of fog fron default model producer",
+  "projection": {},
+  "views": [{
+    "layers": [{
+      "qid": "l",
+      "layer_type": "isoband",
+      "parameter": "FogIntensity",
+      "isobands": "json:isobands/fogintensity.json",
+      "css": "isobands/fogintensity.css",
+      "attributes": {
+        "shape-rendering": "crispEdges"
+      }
     }]
+  }]
 }

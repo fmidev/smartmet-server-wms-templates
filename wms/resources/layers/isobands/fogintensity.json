@@ -1,18 +1,18 @@
 [
-    {
-        "attributes": {
-            "class": "FogIntensity_05_15"
-        },
-        "hilimit": 1.5,
-        "lolimit": 0.5,
-        "qid": "FogIntensity_05_15"
+  {
+    "attributes": {
+      "class": "FogIntensity_05_15"
     },
-    {
-        "attributes": {
-            "class": "FogIntensity_15_25"
-        },
-        "hilimit": 2.5,
-        "lolimit": 1.5,
-        "qid": "FogIntensity_15_25"
-    }
+    "hilimit": 1.5,
+    "lolimit": 0.5,
+    "qid": "FogIntensity_05_15"
+  },
+  {
+    "attributes": {
+      "class": "FogIntensity_15_25"
+    },
+    "hilimit": 2.5,
+    "lolimit": 1.5,
+    "qid": "FogIntensity_15_25"
+  }
 ]

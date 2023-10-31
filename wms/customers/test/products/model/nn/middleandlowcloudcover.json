@@ -1,17 +1,17 @@
 {
-    "title" : "Middle and low cloud cover",
-    "abstract" : "Top  and middle + low cloud cover from default model producer",
-    "projection": {},
-    "views": [{
-        "layers": [{
-            "qid": "l",
-            "layer_type": "isoband",
-            "parameter": "MiddleAndLowCloudCover",
-            "isobands": "json:isobands/middleandlowcloudcover.json",
-            "css": "isobands/middleandlowcloudcover.css",
-            "attributes": {
-                "shape-rendering": "crispEdges"
-            }
-        }]
+  "title" : "Middle and low cloud cover",
+  "abstract" : "Top  and middle + low cloud cover from default model producer",
+  "projection": {},
+  "views": [{
+    "layers": [{
+      "qid": "l",
+      "layer_type": "isoband",
+      "parameter": "MiddleAndLowCloudCover",
+      "isobands": "json:isobands/middleandlowcloudcover.json",
+      "css": "isobands/middleandlowcloudcover.css",
+      "attributes": {
+        "shape-rendering": "crispEdges"
+      }
     }]
+  }]
 }

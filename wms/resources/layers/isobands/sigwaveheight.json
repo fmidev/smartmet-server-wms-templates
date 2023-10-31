@@ -1,113 +1,113 @@
 [
-    {
-        "attributes": {
-            "class": "TemperatureSea_0_05"
-        },
-        "hilimit": 0.5,
-        "lolimit": 0.01,
-        "qid": "TemperatureSea_0_05"
+  {
+    "attributes": {
+      "class": "TemperatureSea_0_05"
     },
-    {
-        "attributes": {
-            "class": "TemperatureSea_05_1"
-        },
-        "hilimit": 1,
-        "lolimit": 0.5,
-        "qid": "TemperatureSea_05_1"
+    "hilimit": 0.5,
+    "lolimit": 0.01,
+    "qid": "TemperatureSea_0_05"
+  },
+  {
+    "attributes": {
+      "class": "TemperatureSea_05_1"
     },
-    {
-        "attributes": {
-            "class": "TemperatureSea_1_15"
-        },
-        "hilimit": 1.5,
-        "lolimit": 1,
-        "qid": "TemperatureSea_1_15"
+    "hilimit": 1,
+    "lolimit": 0.5,
+    "qid": "TemperatureSea_05_1"
+  },
+  {
+    "attributes": {
+      "class": "TemperatureSea_1_15"
     },
-    {
-        "attributes": {
-            "class": "TemperatureSea_15_2"
-        },
-        "hilimit": 2,
-        "lolimit": 1.5,
-        "qid": "TemperatureSea_15_2"
+    "hilimit": 1.5,
+    "lolimit": 1,
+    "qid": "TemperatureSea_1_15"
+  },
+  {
+    "attributes": {
+      "class": "TemperatureSea_15_2"
     },
-    {
-        "attributes": {
-            "class": "TemperatureSea_2_25"
-        },
-        "hilimit": 2.5,
-        "lolimit": 2,
-        "qid": "TemperatureSea_2_25"
+    "hilimit": 2,
+    "lolimit": 1.5,
+    "qid": "TemperatureSea_15_2"
+  },
+  {
+    "attributes": {
+      "class": "TemperatureSea_2_25"
     },
-    {
-        "attributes": {
-            "class": "TemperatureSea_25_3"
-        },
-        "hilimit": 3,
-        "lolimit": 2.5,
-        "qid": "TemperatureSea_25_3"
+    "hilimit": 2.5,
+    "lolimit": 2,
+    "qid": "TemperatureSea_2_25"
+  },
+  {
+    "attributes": {
+      "class": "TemperatureSea_25_3"
     },
-    {
-        "attributes": {
-            "class": "TemperatureSea_3_35"
-        },
-        "hilimit": 3.5,
-        "lolimit": 3,
-        "qid": "TemperatureSea_3_35"
+    "hilimit": 3,
+    "lolimit": 2.5,
+    "qid": "TemperatureSea_25_3"
+  },
+  {
+    "attributes": {
+      "class": "TemperatureSea_3_35"
     },
-    {
-        "attributes": {
-            "class": "TemperatureSea_35_4"
-        },
-        "hilimit": 4,
-        "lolimit": 3.5,
-        "qid": "TemperatureSea_35_4"
+    "hilimit": 3.5,
+    "lolimit": 3,
+    "qid": "TemperatureSea_3_35"
+  },
+  {
+    "attributes": {
+      "class": "TemperatureSea_35_4"
     },
-    {
-        "attributes": {
-            "class": "TemperatureSea_4_45"
-        },
-        "hilimit": 4.5,
-        "lolimit": 4,
-        "qid": "TemperatureSea_4_45"
+    "hilimit": 4,
+    "lolimit": 3.5,
+    "qid": "TemperatureSea_35_4"
+  },
+  {
+    "attributes": {
+      "class": "TemperatureSea_4_45"
     },
-    {
-        "attributes": {
-            "class": "TemperatureSea_45_5"
-        },
-        "hilimit": 5,
-        "lolimit": 4.5,
-        "qid": "TemperatureSea_45_5"
+    "hilimit": 4.5,
+    "lolimit": 4,
+    "qid": "TemperatureSea_4_45"
+  },
+  {
+    "attributes": {
+      "class": "TemperatureSea_45_5"
     },
-    {
-        "attributes": {
-            "class": "TemperatureSea_5_6"
-        },
-        "hilimit": 6,
-        "lolimit": 5,
-        "qid": "TemperatureSea_5_6"
+    "hilimit": 5,
+    "lolimit": 4.5,
+    "qid": "TemperatureSea_45_5"
+  },
+  {
+    "attributes": {
+      "class": "TemperatureSea_5_6"
     },
-    {
-        "attributes": {
-            "class": "TemperatureSea_6_7"
-        },
-        "hilimit": 7,
-        "lolimit": 6,
-        "qid": "TemperatureSea_6_7"
+    "hilimit": 6,
+    "lolimit": 5,
+    "qid": "TemperatureSea_5_6"
+  },
+  {
+    "attributes": {
+      "class": "TemperatureSea_6_7"
     },
-    {
-        "attributes": {
-            "class": "TemperatureSea_7_8"
-        },
-        "hilimit": 8,
-        "lolimit": 7,
-        "qid": "TemperatureSea_7_8"
+    "hilimit": 7,
+    "lolimit": 6,
+    "qid": "TemperatureSea_6_7"
+  },
+  {
+    "attributes": {
+      "class": "TemperatureSea_7_8"
     },
-    {
-        "attributes": {
-            "class": "TemperatureSea_8"
-        },
-        "lolimit": 8,
-        "qid": "TemperatureSea_8"
-    }
+    "hilimit": 8,
+    "lolimit": 7,
+    "qid": "TemperatureSea_7_8"
+  },
+  {
+    "attributes": {
+      "class": "TemperatureSea_8"
+    },
+    "lolimit": 8,
+    "qid": "TemperatureSea_8"
+  }
 ]

@@ -1,217 +1,217 @@
 [
-    {
-        "attributes": {
-            "class": "rracc_1_2"
-        }, 
-        "hilimit": 2, 
-        "lolimit": 1, 
-        "qid": "rracc_1_2"
+  {
+    "attributes": {
+      "class": "rracc_1_2"
     }, 
-    {
-        "attributes": {
-            "class": "rracc_2_5"
-        }, 
-        "hilimit": 5, 
-        "lolimit": 2, 
-        "qid": "rracc_2_5"
+    "hilimit": 2, 
+    "lolimit": 1, 
+    "qid": "rracc_1_2"
+  }, 
+  {
+    "attributes": {
+      "class": "rracc_2_5"
     }, 
-    {
-        "attributes": {
-            "class": "rracc_5_10"
-        }, 
-        "hilimit": 10, 
-        "lolimit": 5, 
-        "qid": "rracc_5_10"
+    "hilimit": 5, 
+    "lolimit": 2, 
+    "qid": "rracc_2_5"
+  }, 
+  {
+    "attributes": {
+      "class": "rracc_5_10"
     }, 
-    {
-        "attributes": {
-            "class": "rracc_10_20"
-        }, 
-        "hilimit": 20, 
-        "lolimit": 10, 
-        "qid": "rracc_10_20"
+    "hilimit": 10, 
+    "lolimit": 5, 
+    "qid": "rracc_5_10"
+  }, 
+  {
+    "attributes": {
+      "class": "rracc_10_20"
     }, 
-    {
-        "attributes": {
-            "class": "rracc_20_30"
-        }, 
-        "hilimit": 30, 
-        "lolimit": 20, 
-        "qid": "rracc_20_30"
+    "hilimit": 20, 
+    "lolimit": 10, 
+    "qid": "rracc_10_20"
+  }, 
+  {
+    "attributes": {
+      "class": "rracc_20_30"
     }, 
-    {
-        "attributes": {
-            "class": "rracc_30_40"
-        }, 
-        "hilimit": 40, 
-        "lolimit": 30, 
-        "qid": "rracc_30_40"
+    "hilimit": 30, 
+    "lolimit": 20, 
+    "qid": "rracc_20_30"
+  }, 
+  {
+    "attributes": {
+      "class": "rracc_30_40"
     }, 
-    {
-        "attributes": {
-            "class": "rracc_40_50"
-        }, 
-        "hilimit": 50, 
-        "lolimit": 40, 
-        "qid": "rracc_40_50"
+    "hilimit": 40, 
+    "lolimit": 30, 
+    "qid": "rracc_30_40"
+  }, 
+  {
+    "attributes": {
+      "class": "rracc_40_50"
     }, 
-    {
-        "attributes": {
-            "class": "rracc_50_60"
-        }, 
-        "hilimit": 60, 
-        "lolimit": 50, 
-        "qid": "rracc_50_60"
+    "hilimit": 50, 
+    "lolimit": 40, 
+    "qid": "rracc_40_50"
+  }, 
+  {
+    "attributes": {
+      "class": "rracc_50_60"
     }, 
-    {
-        "attributes": {
-            "class": "rracc_60_70"
-        }, 
-        "hilimit": 70, 
-        "lolimit": 60, 
-        "qid": "rracc_60_70"
+    "hilimit": 60, 
+    "lolimit": 50, 
+    "qid": "rracc_50_60"
+  }, 
+  {
+    "attributes": {
+      "class": "rracc_60_70"
     }, 
-    {
-        "attributes": {
-            "class": "rracc_70_80"
-        }, 
-        "hilimit": 80, 
-        "lolimit": 70, 
-        "qid": "rracc_70_80"
+    "hilimit": 70, 
+    "lolimit": 60, 
+    "qid": "rracc_60_70"
+  }, 
+  {
+    "attributes": {
+      "class": "rracc_70_80"
     }, 
-    {
-        "attributes": {
-            "class": "rracc_80_90"
-        }, 
-        "hilimit": 90, 
-        "lolimit": 80, 
-        "qid": "rracc_80_90"
+    "hilimit": 80, 
+    "lolimit": 70, 
+    "qid": "rracc_70_80"
+  }, 
+  {
+    "attributes": {
+      "class": "rracc_80_90"
     }, 
-    {
-        "attributes": {
-            "class": "rracc_90_100"
-        }, 
-        "hilimit": 100, 
-        "lolimit": 90, 
-        "qid": "rracc_90_100"
+    "hilimit": 90, 
+    "lolimit": 80, 
+    "qid": "rracc_80_90"
+  }, 
+  {
+    "attributes": {
+      "class": "rracc_90_100"
     }, 
-    {
-        "attributes": {
-            "class": "rracc_100_110"
-        }, 
-        "hilimit": 110, 
-        "lolimit": 100, 
-        "qid": "rracc_100_110"
+    "hilimit": 100, 
+    "lolimit": 90, 
+    "qid": "rracc_90_100"
+  }, 
+  {
+    "attributes": {
+      "class": "rracc_100_110"
     }, 
-    {
-        "attributes": {
-            "class": "rracc_110_120"
-        }, 
-        "hilimit": 120, 
-        "lolimit": 110, 
-        "qid": "rracc_110_120"
+    "hilimit": 110, 
+    "lolimit": 100, 
+    "qid": "rracc_100_110"
+  }, 
+  {
+    "attributes": {
+      "class": "rracc_110_120"
     }, 
-    {
-        "attributes": {
-            "class": "rracc_120_130"
-        }, 
-        "hilimit": 130, 
-        "lolimit": 120, 
-        "qid": "rracc_120_130"
+    "hilimit": 120, 
+    "lolimit": 110, 
+    "qid": "rracc_110_120"
+  }, 
+  {
+    "attributes": {
+      "class": "rracc_120_130"
     }, 
-    {
-        "attributes": {
-            "class": "rracc_130_140"
-        }, 
-        "hilimit": 140, 
-        "lolimit": 130, 
-        "qid": "rracc_130_140"
+    "hilimit": 130, 
+    "lolimit": 120, 
+    "qid": "rracc_120_130"
+  }, 
+  {
+    "attributes": {
+      "class": "rracc_130_140"
     }, 
-    {
-        "attributes": {
-            "class": "rracc_140_150"
-        }, 
-        "hilimit": 150, 
-        "lolimit": 140, 
-        "qid": "rracc_140_150"
+    "hilimit": 140, 
+    "lolimit": 130, 
+    "qid": "rracc_130_140"
+  }, 
+  {
+    "attributes": {
+      "class": "rracc_140_150"
     }, 
-    {
-        "attributes": {
-            "class": "rracc_150_160"
-        }, 
-        "hilimit": 160, 
-        "lolimit": 150, 
-        "qid": "rracc_150_160"
+    "hilimit": 150, 
+    "lolimit": 140, 
+    "qid": "rracc_140_150"
+  }, 
+  {
+    "attributes": {
+      "class": "rracc_150_160"
     }, 
-    {
-        "attributes": {
-            "class": "rracc_160_170"
-        }, 
-        "hilimit": 170, 
-        "lolimit": 160, 
-        "qid": "rracc_160_170"
-    },
-    {
-        "attributes": {
-            "class": "rracc_170_180"
-        }, 
-        "hilimit": 180, 
-        "lolimit": 170, 
-        "qid": "rracc_170_180"
-    },
-    {
-        "attributes": {
-            "class": "rracc_180_190"
-        }, 
-        "hilimit": 190, 
-        "lolimit": 180, 
-        "qid": "rracc_180_190"
-    },
-    {
-        "attributes": {
-            "class": "rracc_190_200"
-        }, 
-        "hilimit": 200, 
-        "lolimit": 190, 
-        "qid": "rracc_190_200"
-    },
-    {
-        "attributes": {
-            "class": "rracc_200_300"
-        }, 
-        "hilimit": 300, 
-        "lolimit": 200, 
-        "qid": "rracc_200_300"
-    },
-    {
-        "attributes": {
-            "class": "rracc_300_400"
-        }, 
-        "hilimit": 400, 
-        "lolimit": 300, 
-        "qid": "rracc_300_400"
-    },
-    {
-        "attributes": {
-            "class": "rracc_400_500"
-        }, 
-        "hilimit": 500, 
-        "lolimit": 400, 
-        "qid": "rracc_400_500"
-    },
-    {
-        "attributes": {
-            "class": "rracc_500_600"
-        }, 
-        "hilimit": 600, 
-        "lolimit": 500, 
-        "qid": "rracc_500_600"
-    },
-    {
-        "attributes": {
-            "class": "rracc_600_inf"
-        }, 
-        "hilimit": 600,  
-        "qid": "rracc_600_inf"
-    }
+    "hilimit": 160, 
+    "lolimit": 150, 
+    "qid": "rracc_150_160"
+  }, 
+  {
+    "attributes": {
+      "class": "rracc_160_170"
+    }, 
+    "hilimit": 170, 
+    "lolimit": 160, 
+    "qid": "rracc_160_170"
+  },
+  {
+    "attributes": {
+      "class": "rracc_170_180"
+    }, 
+    "hilimit": 180, 
+    "lolimit": 170, 
+    "qid": "rracc_170_180"
+  },
+  {
+    "attributes": {
+      "class": "rracc_180_190"
+    }, 
+    "hilimit": 190, 
+    "lolimit": 180, 
+    "qid": "rracc_180_190"
+  },
+  {
+    "attributes": {
+      "class": "rracc_190_200"
+    }, 
+    "hilimit": 200, 
+    "lolimit": 190, 
+    "qid": "rracc_190_200"
+  },
+  {
+    "attributes": {
+      "class": "rracc_200_300"
+    }, 
+    "hilimit": 300, 
+    "lolimit": 200, 
+    "qid": "rracc_200_300"
+  },
+  {
+    "attributes": {
+      "class": "rracc_300_400"
+    }, 
+    "hilimit": 400, 
+    "lolimit": 300, 
+    "qid": "rracc_300_400"
+  },
+  {
+    "attributes": {
+      "class": "rracc_400_500"
+    }, 
+    "hilimit": 500, 
+    "lolimit": 400, 
+    "qid": "rracc_400_500"
+  },
+  {
+    "attributes": {
+      "class": "rracc_500_600"
+    }, 
+    "hilimit": 600, 
+    "lolimit": 500, 
+    "qid": "rracc_500_600"
+  },
+  {
+    "attributes": {
+      "class": "rracc_600_inf"
+    }, 
+    "hilimit": 600,  
+    "qid": "rracc_600_inf"
+  }
 ]
