@@ -17,7 +17,7 @@ function cleanup() {
 trap cleanup EXIT
 
 function main() {
-  find csection/ wms/ dali/ resources/ -type f ! -name '*.css' ! -name '*.json' ! -name '*.jsonc' ! -name 'LICENSE' ! -name '.*' -print0 | \
+  find csection/ wms/ dali/ resources/ -type f ! -name '*.css' ! -name '*.json' ! -name '*.jsonc' ! -name 'LICENSE' ! -name '.*' -print0 2> /dev/null | \
     xargs --no-run-if-empty --null --max-args=1 xmllint --noout > "${TEMP_FILE}" 2>&1 || \
     echo "Found XML errors:"
 

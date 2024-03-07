@@ -1,0 +1,38 @@
+name: Test
+
+on:
+  pull_request:
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+
+    - name: Lint setup
+      run: |
+        sudo apt-get update
+        sudo apt-get --assume-yes install libxml2-utils
+        npm ci
+
+    - name: CSS lint
+      run: |
+        npm run test:css
+
+    - name: JSONC lint
+      run: |
+        npm run test:jsonc
+
+    - name: XML lint
+      run: |
+        npm run test:xml
+
+    # Allow SVG validation errors, only show the findings
+    - name: SVG lint (report only)
+      run: |
+        npm run test:svg || echo "Found SVG error(s)."

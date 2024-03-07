@@ -52,6 +52,11 @@ npm run test
 npm run test:jsonc
 npm run test:css
 
+# XML and SVG lints require Bash and xmllint under the hood,
+# so the might not work automatically in Windows or Mac environments
+npm run test:xml
+npm run test:svg
+
 # Try to fix issues automatically
 npm run test:jsonc-fix
 ```

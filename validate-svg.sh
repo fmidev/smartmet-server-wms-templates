@@ -41,7 +41,7 @@ EOF
 function main() {
   while IFS= read -r -d '' filename; do
     convert_to_full_svg "${filename}"
-  done < <(find csection/ wms/ dali/ resources/ -type f ! -name '*.css' ! -name '*.json' ! -name '.*' -print0)
+  done < <(find csection/ wms/ dali/ resources/ -type f ! -name '*.css' ! -name '*.json' ! -name '.*' -print0 2> /dev/null)
 
   java -jar "${NU_CHECKER_JAR}" --svg "${TEMP_DIR}"
 }

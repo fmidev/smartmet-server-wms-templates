@@ -1,4 +1,4 @@
-<symbol id="weather_1_II_yo1">
+<symbol id="weather_1_II_yo1" xmlns:xlink="http://www.w3.org/1999/xlink">
 <desc>Moony</desc>
 <g transform="translate(-30,-30)">
 	<circle fill="#0071BC" stroke="#00FFFF" stroke-width="0.9208" cx="30.827" cy="29.127" r="19.136"/>
