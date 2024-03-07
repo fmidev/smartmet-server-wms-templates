@@ -1,4 +1,4 @@
-<symbol id="weather_1_II_1">
+<symbol id="weather_1_II_1" xmlns:xlink="http://www.w3.org/1999/xlink">
 <desc>Sunny</desc>
 <g transform="translate(-30,-30)">
 	<radialGradient id="weather_1_II_1_gradient" cx="30.1865" cy="28.6975" r="21.5474" gradientUnits="userSpaceOnUse">
