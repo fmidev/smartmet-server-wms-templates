@@ -1,0 +1,83 @@
+{
+  "finland": {
+    "schema": "esri",
+    "table": "finland_country_wgs84",
+    "minarea": 100,
+    "mindistance": 1
+  },
+  "frame": {
+    "tag": "rect",
+    "attributes": {
+      "width": 480,
+      "height": 640,
+      "stroke": "black",
+      "stroke-width": 1.5,
+      "fill": "none"
+    }
+  },
+  "backgroundmap": {
+    "qid": "europe",
+    "layer_type": "map",
+    "map": {
+      "schema": "esri",
+      "table": "europe_country_wgs84"
+    },
+    "attributes": {
+      "fill": "#FFFFFF"
+    }
+  },
+  "sea": {
+    "qid": "sea",
+    "layer_type": "background",
+    "css": "maps/map.css",
+    "attributes": {
+      "fill": "#FFFFFF"
+    }
+  },
+  "Europe_boundaries": {
+    "qid": "europe",
+    "layer_type": "map",
+    "map": {
+      "schema": "esri",
+      "table": "europe_country_wgs84"
+    },
+    "attributes": {
+      "fill": "none",
+      "stroke": "#000",
+      "stroke-width": "0.4pt"
+    }
+  },
+  "Finland_boundaries": {
+    "qid": "Finland_boundaries",
+    "layer_type": "map",
+    "map": {
+      "pgname": "gis",
+      "schema": "public",
+      "table": "varoalue",
+      "mindistance": 0
+    },
+    "attributes": {
+      "fill": "none",
+      "stroke": "#000",
+      "stroke-width": "0.4pt"
+    }
+  },
+  "Europe_lakes": {
+    "qid": "europe-lakes",
+    "layer_type": "map",
+    "map": {
+      "schema": "esri",
+      "table": "finland_major_lakes_wgs84"
+    },
+    "css": "maps/map.css",
+    "attributes": {
+      "class": "Lake"
+    }
+  },
+  "view_frame": {
+    "tag": "g",
+    "layers": [
+      "ref:refs.frame"
+    ]
+  }
+}

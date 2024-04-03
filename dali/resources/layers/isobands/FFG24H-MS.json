@@ -1,0 +1,113 @@
+[
+  {
+    "qid": "ff-ms_40",
+    "lolimit": 40,
+    "attributes": {
+      "class": "ff-ms_40"
+    }
+  },
+  {
+    "qid": "ff-ms_38_40",
+    "lolimit": 38,
+    "hilimit": 40,
+    "attributes": {
+      "class": "ff-ms_38_40"
+    }
+  },
+  {
+    "qid": "ff-ms_36_38",
+    "lolimit": 36,
+    "hilimit": 38,
+    "attributes": {
+      "class": "ff-ms_36_38"
+    }
+  },
+  {
+    "qid": "ff-ms_34_36",
+    "lolimit": 34,
+    "hilimit": 36,
+    "attributes": {
+      "class": "ff-ms_34_36"
+    }
+  },
+  {
+    "qid": "ff-ms_32_34",
+    "lolimit": 32,
+    "hilimit": 34,
+    "attributes": {
+      "class": "ff-ms_32_34"
+    }
+  },
+  {
+    "qid": "ff-ms_30_32",
+    "lolimit": 30,
+    "hilimit": 32,
+    "attributes": {
+      "class": "ff-ms_30_32"
+    }
+  },
+  {
+    "qid": "ff-ms_28_30",
+    "lolimit": 28,
+    "hilimit": 30,
+    "attributes": {
+      "class": "ff-ms_28_30"
+    }
+  },
+  {
+    "qid": "ff-ms_26_28",
+    "lolimit": 26,
+    "hilimit": 28,
+    "attributes": {
+      "class": "ff-ms_26_28"
+    }
+  },
+  {
+    "qid": "ff-ms_24_26",
+    "lolimit": 24,
+    "hilimit": 26,
+    "attributes": {
+      "class": "ff-ms_24_26"
+    }
+  },
+  {
+    "qid": "ff-ms_22_24",
+    "lolimit": 22,
+    "hilimit": 24,
+    "attributes": {
+      "class": "ff-ms_22_24"
+    }
+  },
+  {
+    "qid": "ff-ms_20_22",
+    "lolimit": 20,
+    "hilimit": 22,
+    "attributes": {
+      "class": "ff-ms_20_22"
+    }
+  },
+  {
+    "qid": "ff-ms_18_20",
+    "lolimit": 18,
+    "hilimit": 20,
+    "attributes": {
+      "class": "ff-ms_18_20"
+    }
+  },
+  {
+    "qid": "ff-ms_16_18",
+    "lolimit": 16,
+    "hilimit": 18,
+    "attributes": {
+      "class": "ff-ms_16_18"
+    }
+  },
+  {
+    "qid": "ff-ms_14_16",
+    "lolimit": 14,
+    "hilimit": 16,
+    "attributes": {
+      "class": "ff-ms_14_16"
+    }
+  }
+]

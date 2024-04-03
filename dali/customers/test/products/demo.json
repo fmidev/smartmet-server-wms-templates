@@ -1,0 +1,107 @@
+{
+  "title": "Demo",
+  "abstract": "Longer description",
+  "source": "grid",
+  "width": 1200,
+  "height": 800,
+  "refs": "json:products/map_product_refs.json",
+  "defs": "json:products/common_defs.json",
+  "projection": {
+    "xsize": 600,
+    "ysize": 400,
+    "crs": "EPSG:3857",
+    "bboxcrs": "EPSG:4326",
+    "x1": 21,
+    "y1": 43,
+    "x2": 43,
+    "y2": 53
+  },
+  "views": [
+    {
+      "qid": "v1-",
+      "attributes": {
+        "id": "view1",
+        "display": "block",
+        "transform": "translate(0 0)"
+      },
+      "layers": [
+        {
+          "qid": "FF-MS-1",
+          "layer_type": "isoband",
+          "parameter": "FMI-1447:ECGMTA:1007:6:10:1",
+          "isobands": "json:isobands/FFG24H-MS.json",
+          "css": "isobands/FFG24H-MS.css",
+          "attributes": {
+            "shape-rendering": "crispEdges"
+          }
+        },
+        "ref:refs.Europe_boundaries"
+      ]
+    },
+    {
+      "time_offset": 180,
+      "qid": "v2-",
+      "attributes": {
+        "id": "view2",
+        "display": "block",
+        "transform": "translate(600 000)"
+      },
+      "layers": [
+        {
+          "qid": "FF-MS-2",
+          "layer_type": "isoband",
+          "parameter": "FMI-1447:ECGMTA:1007:6:10:1",
+          "isobands": "json:isobands/FFG24H-MS.json",
+          "css": "isobands/FFG24H-MS.css",
+          "attributes": {
+            "shape-rendering": "crispEdges"
+          }
+        },
+        "ref:refs.Europe_boundaries"
+      ]
+    },
+    {
+      "time_offset": 360,
+      "qid": "v3-",
+      "attributes": {
+        "id": "view3",
+        "display": "block",
+        "transform": "translate(0 400)"
+      },
+      "layers": [
+        {
+          "qid": "FF-MS-3",
+          "layer_type": "isoband",
+          "parameter": "FMI-1447:ECGMTA:1007:6:10:1",
+          "isobands": "json:isobands/FFG24H-MS.json",
+          "css": "isobands/FFG24H-MS.css",
+          "attributes": {
+            "shape-rendering": "crispEdges"
+          }
+        },
+        "ref:refs.Europe_boundaries"
+      ]
+    },
+    {
+      "qid": "v4-",
+      "attributes": {
+        "id": "view4",
+        "display": "block",
+        "transform": "translate(600 400)"
+      },
+      "layers": [
+        {
+          "qid": "FF-MS-4",
+          "layer_type": "isoband",
+          "parameter": "FMI-1447:ECGMTA:1007:6:10:1",
+          "isobands": "json:isobands/FFG24H-MS.json",
+          "css": "isobands/FFG24H-MS.css",
+          "attributes": {
+            "shape-rendering": "crispEdges"
+          }
+        },
+        "ref:refs.Europe_boundaries"
+      ]
+    }
+  ]
+}

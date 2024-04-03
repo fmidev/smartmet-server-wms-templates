@@ -1,0 +1,35 @@
+{
+  "layers": [
+    {
+      "tag": "symbol",
+      "attributes": {
+        "id": "rect"
+      },
+      "layers": [
+        {
+          "tag": "rect",
+          "attributes": {
+            "width": "15",
+            "height": "15",
+            "stroke": "black",
+            "stroke-width": "1"
+          }
+        }
+      ]
+    },
+    {
+      "tag": "clipPath",
+      "attributes": {
+        "id": "cutAland"
+      },
+      "layers": [
+        {
+          "tag": "path",
+          "attributes": {
+            "d": "M50,1050 400,1050 400,1300 50,1300 50,1050z"
+          }
+        }
+      ]
+    }
+  ]
+}
