@@ -8,8 +8,7 @@
   "projection": {
     "xsize": 600,
     "ysize": 800,
-    "crs": "EPSG:3857",
-    "bboxcrs": "EPSG:4326",
+    "crs": "EPSG:4326",
     "x1": 18,
     "y1": 58,
     "x2": 33,
