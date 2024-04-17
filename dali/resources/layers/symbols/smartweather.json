@@ -1,0 +1,362 @@
+[
+  {
+    "value": 1,
+    "symbol": "smartsymbol/day/1"
+  },
+  {
+    "value": 2,
+    "symbol": "smartsymbol/day/2"
+  },
+  {
+    "value": 4,
+    "symbol": "smartsymbol/day/4"
+  },
+  {
+    "value": 6,
+    "symbol": "smartsymbol/day/6"
+  },
+  {
+    "value": 7,
+    "symbol": "smartsymbol/day/7"
+  },
+  {
+    "value": 9,
+    "symbol": "smartsymbol/day/9"
+  },
+  {
+    "value": 11,
+    "symbol": "smartsymbol/day/11"
+  },
+  {
+    "value": 14,
+    "symbol": "smartsymbol/day/14"
+  },
+  {
+    "value": 17,
+    "symbol": "smartsymbol/day/17"
+  },
+  {
+    "value": 21,
+    "symbol": "smartsymbol/day/21"
+  },
+  {
+    "value": 24,
+    "symbol": "smartsymbol/day/24"
+  },
+  {
+    "value": 27,
+    "symbol": "smartsymbol/day/27"
+  },
+  {
+    "value": 31,
+    "symbol": "smartsymbol/day/31"
+  },
+  {
+    "value": 32,
+    "symbol": "smartsymbol/day/32"
+  },
+  {
+    "value": 33,
+    "symbol": "smartsymbol/day/33"
+  },
+  {
+    "value": 34,
+    "symbol": "smartsymbol/day/34"
+  },
+  {
+    "value": 35,
+    "symbol": "smartsymbol/day/35"
+  },
+  {
+    "value": 36,
+    "symbol": "smartsymbol/day/36"
+  },
+  {
+    "value": 37,
+    "symbol": "smartsymbol/day/37"
+  },
+  {
+    "value": 38,
+    "symbol": "smartsymbol/day/38"
+  },
+  {
+    "value": 39,
+    "symbol": "smartsymbol/day/39"
+  },
+  {
+    "value": 41,
+    "symbol": "smartsymbol/day/41"
+  },
+  {
+    "value": 42,
+    "symbol": "smartsymbol/day/42"
+  },
+  {
+    "value": 43,
+    "symbol": "smartsymbol/day/43"
+  },
+  {
+    "value": 44,
+    "symbol": "smartsymbol/day/44"
+  },
+  {
+    "value": 45,
+    "symbol": "smartsymbol/day/45"
+  },
+  {
+    "value": 46,
+    "symbol": "smartsymbol/day/46"
+  },
+  {
+    "value": 47,
+    "symbol": "smartsymbol/day/47"
+  },
+  {
+    "value": 48,
+    "symbol": "smartsymbol/day/48"
+  },
+  {
+    "value": 49,
+    "symbol": "smartsymbol/day/49"
+  },
+  {
+    "value": 51,
+    "symbol": "smartsymbol/day/51"
+  },
+  {
+    "value": 52,
+    "symbol": "smartsymbol/day/52"
+  },
+  {
+    "value": 53,
+    "symbol": "smartsymbol/day/53"
+  },
+  {
+    "value": 54,
+    "symbol": "smartsymbol/day/54"
+  },
+  {
+    "value": 55,
+    "symbol": "smartsymbol/day/55"
+  },
+  {
+    "value": 56,
+    "symbol": "smartsymbol/day/56"
+  },
+  {
+    "value": 57,
+    "symbol": "smartsymbol/day/57"
+  },
+  {
+    "value": 58,
+    "symbol": "smartsymbol/day/58"
+  },
+  {
+    "value": 59,
+    "symbol": "smartsymbol/day/59"
+  },
+  {
+    "value": 61,
+    "symbol": "smartsymbol/day/61"
+  },
+  {
+    "value": 64,
+    "symbol": "smartsymbol/day/64"
+  },
+  {
+    "value": 67,
+    "symbol": "smartsymbol/day/67"
+  },
+  {
+    "value": 71,
+    "symbol": "smartsymbol/day/71"
+  },
+  {
+    "value": 74,
+    "symbol": "smartsymbol/day/74"
+  },
+  {
+    "value": 77,
+    "symbol": "smartsymbol/day/77"
+  },
+  {
+    "value": 101,
+    "symbol": "smartsymbol/night/101"
+  },
+  {
+    "value": 102,
+    "symbol": "smartsymbol/night/102"
+  },
+  {
+    "value": 104,
+    "symbol": "smartsymbol/night/104"
+  },
+  {
+    "value": 106,
+    "symbol": "smartsymbol/night/106"
+  },
+  {
+    "value": 107,
+    "symbol": "smartsymbol/night/107"
+  },
+  {
+    "value": 109,
+    "symbol": "smartsymbol/night/109"
+  },
+  {
+    "value": 111,
+    "symbol": "smartsymbol/night/111"
+  },
+  {
+    "value": 114,
+    "symbol": "smartsymbol/night/114"
+  },
+  {
+    "value": 117,
+    "symbol": "smartsymbol/night/117"
+  },
+  {
+    "value": 121,
+    "symbol": "smartsymbol/night/121"
+  },
+  {
+    "value": 124,
+    "symbol": "smartsymbol/night/124"
+  },
+  {
+    "value": 127,
+    "symbol": "smartsymbol/night/127"
+  },
+  {
+    "value": 131,
+    "symbol": "smartsymbol/night/131"
+  },
+  {
+    "value": 132,
+    "symbol": "smartsymbol/night/132"
+  },
+  {
+    "value": 133,
+    "symbol": "smartsymbol/night/133"
+  },
+  {
+    "value": 134,
+    "symbol": "smartsymbol/night/134"
+  },
+  {
+    "value": 135,
+    "symbol": "smartsymbol/night/135"
+  },
+  {
+    "value": 136,
+    "symbol": "smartsymbol/night/136"
+  },
+  {
+    "value": 137,
+    "symbol": "smartsymbol/night/137"
+  },
+  {
+    "value": 138,
+    "symbol": "smartsymbol/night/138"
+  },
+  {
+    "value": 139,
+    "symbol": "smartsymbol/night/139"
+  },
+  {
+    "value": 141,
+    "symbol": "smartsymbol/night/141"
+  },
+  {
+    "value": 142,
+    "symbol": "smartsymbol/night/142"
+  },
+  {
+    "value": 143,
+    "symbol": "smartsymbol/night/143"
+  },
+  {
+    "value": 144,
+    "symbol": "smartsymbol/night/144"
+  },
+  {
+    "value": 145,
+    "symbol": "smartsymbol/night/145"
+  },
+  {
+    "value": 146,
+    "symbol": "smartsymbol/night/146"
+  },
+  {
+    "value": 147,
+    "symbol": "smartsymbol/night/147"
+  },
+  {
+    "value": 148,
+    "symbol": "smartsymbol/night/148"
+  },
+  {
+    "value": 149,
+    "symbol": "smartsymbol/night/149"
+  },
+  {
+    "value": 151,
+    "symbol": "smartsymbol/night/151"
+  },
+  {
+    "value": 152,
+    "symbol": "smartsymbol/night/152"
+  },
+  {
+    "value": 153,
+    "symbol": "smartsymbol/night/153"
+  },
+  {
+    "value": 154,
+    "symbol": "smartsymbol/night/154"
+  },
+  {
+    "value": 155,
+    "symbol": "smartsymbol/night/155"
+  },
+  {
+    "value": 156,
+    "symbol": "smartsymbol/night/156"
+  },
+  {
+    "value": 157,
+    "symbol": "smartsymbol/night/157"
+  },
+  {
+    "value": 158,
+    "symbol": "smartsymbol/night/158"
+  },
+  {
+    "value": 159,
+    "symbol": "smartsymbol/night/159"
+  },
+  {
+    "value": 161,
+    "symbol": "smartsymbol/night/161"
+  },
+  {
+    "value": 164,
+    "symbol": "smartsymbol/night/164"
+  },
+  {
+    "value": 167,
+    "symbol": "smartsymbol/night/167"
+  },
+  {
+    "value": 171,
+    "symbol": "smartsymbol/night/171"
+  },
+  {
+    "value": 174,
+    "symbol": "smartsymbol/night/174"
+  },
+  {
+    "value": 177,
+    "symbol": "smartsymbol/night/177"
+  }
+]

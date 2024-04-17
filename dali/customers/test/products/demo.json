@@ -1,38 +1,102 @@
 {
   "title": "Demo",
   "abstract": "Longer description",
-  "source": "grid",
   "width": 1200,
-  "height": 800,
+  "height": 1600,
   "refs": "json:products/map_product_refs.json",
   "defs": "json:products/common_defs.json",
   "projection": {
     "xsize": 600,
-    "ysize": 400,
+    "ysize": 800,
     "crs": "EPSG:3857",
     "bboxcrs": "EPSG:4326",
-    "x1": 21,
-    "y1": 43,
-    "x2": 43,
-    "y2": 53
+    "x1": 18,
+    "y1": 58,
+    "x2": 33,
+    "y2": 71
   },
   "views": [
     {
       "qid": "v1-",
+      "producer": "ecmwf_maailma_pinta",
       "attributes": {
-        "id": "view1",
-        "display": "block",
         "transform": "translate(0 0)"
       },
       "layers": [
         {
-          "qid": "FF-MS-1",
+          "qid": "Temperature-1",
           "layer_type": "isoband",
-          "parameter": "FMI-1447:ECGMTA:1007:6:10:1",
-          "isobands": "json:isobands/FFG24H-MS.json",
-          "css": "isobands/FFG24H-MS.css",
+          "parameter": "Temperature",
+          "isobands": "json:isobands/Temperature.json",
+          "css": "isobands/Temperature.css",
           "attributes": {
             "shape-rendering": "crispEdges"
+          }
+        },
+        {
+          "qid": "Temperature-number-1",
+          "layer_type": "number",
+          "css": "numbers/numbers.css",
+          "parameter": "Temperature",
+          "label": {
+            "dx": 0,
+            "dy": 3,
+            "precision": 0,
+            "missing": "-"
+          },
+          "positions": {
+            "x": 20,
+            "y": 18,
+            "dx": 30,
+            "dy": 30,
+            "ddx": 15
+          }
+        },
+        {
+          "layer_type": "symbol",
+          "positions": {
+            "layout": "latlon",
+            "locations": [
+              {
+                "longitude": 24.93417,
+                "latitude": 60.17556
+              },
+              {
+                "longitude": 22.264824,
+                "latitude": 60.45451
+              }
+            ],
+            "dx": -8,
+            "dy": -39
+          },
+          "symbol": "dot",
+          "scale": 5
+        },
+        {
+          "qid": "weathersymbol-1",
+          "layer_type": "symbol",
+          "css": "symbols/smartweather.css",
+          "symbols": "json:symbols/smartweather.json",
+          "parameter": "smartsymbol",
+          "scale": 1.4,
+          "positions": {
+            "layout": "latlon",
+            "locations": [
+              {
+                "longitude": 24.93417,
+                "latitude": 60.17556
+              },
+              {
+                "longitude": 22.264824,
+                "latitude": 60.45451
+              }
+            ],
+            "dx": 0,
+            "dy": 0
+          },
+          "attributes": {
+            "id": "weather_1",
+            "class": "Weather"
           }
         },
         "ref:refs.Europe_boundaries"
@@ -41,21 +105,18 @@
     {
       "time_offset": 180,
       "qid": "v2-",
+      "producer": "ecmwf_maailma_pinta",
       "attributes": {
         "id": "view2",
-        "display": "block",
         "transform": "translate(600 000)"
       },
       "layers": [
         {
-          "qid": "FF-MS-2",
+          "qid": "Temperature-2",
           "layer_type": "isoband",
-          "parameter": "FMI-1447:ECGMTA:1007:6:10:1",
-          "isobands": "json:isobands/FFG24H-MS.json",
-          "css": "isobands/FFG24H-MS.css",
-          "attributes": {
-            "shape-rendering": "crispEdges"
-          }
+          "parameter": "Temperature",
+          "isobands": "json:isobands/Temperature.json",
+          "css": "isobands/Temperature.css"
         },
         "ref:refs.Europe_boundaries"
       ]
@@ -63,42 +124,36 @@
     {
       "time_offset": 360,
       "qid": "v3-",
+      "producer": "ecmwf_maailma_pinta",
       "attributes": {
         "id": "view3",
-        "display": "block",
-        "transform": "translate(0 400)"
+        "transform": "translate(0 800)"
       },
       "layers": [
         {
-          "qid": "FF-MS-3",
+          "qid": "Temperature-3",
           "layer_type": "isoband",
-          "parameter": "FMI-1447:ECGMTA:1007:6:10:1",
-          "isobands": "json:isobands/FFG24H-MS.json",
-          "css": "isobands/FFG24H-MS.css",
-          "attributes": {
-            "shape-rendering": "crispEdges"
-          }
+          "parameter": "Temperature",
+          "isobands": "json:isobands/Temperature.json",
+          "css": "isobands/Temperature.css"
         },
         "ref:refs.Europe_boundaries"
       ]
     },
     {
       "qid": "v4-",
+      "producer": "ecmwf_maailma_pinta",
       "attributes": {
         "id": "view4",
-        "display": "block",
-        "transform": "translate(600 400)"
+        "transform": "translate(600 800)"
       },
       "layers": [
         {
-          "qid": "FF-MS-4",
+          "qid": "Temperature-4",
           "layer_type": "isoband",
-          "parameter": "FMI-1447:ECGMTA:1007:6:10:1",
-          "isobands": "json:isobands/FFG24H-MS.json",
-          "css": "isobands/FFG24H-MS.css",
-          "attributes": {
-            "shape-rendering": "crispEdges"
-          }
+          "parameter": "Temperature",
+          "isobands": "json:isobands/Temperature.json",
+          "css": "isobands/Temperature.css"
         },
         "ref:refs.Europe_boundaries"
       ]
