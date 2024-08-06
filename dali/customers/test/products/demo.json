@@ -17,15 +17,15 @@
   "views": [
     {
       "qid": "v1-",
-      "producer": "ecmwf_maailma_pinta",
+      "producer": "gfs_painepinta",
       "attributes": {
         "transform": "translate(0 0)"
       },
       "layers": [
         {
-          "qid": "Temperature-1",
+          "qid": "temperature_visualization_1",
           "layer_type": "isoband",
-          "parameter": "Temperature",
+          "parameter": "temperature",
           "isobands": "json:isobands/Temperature.json",
           "css": "isobands/Temperature.css",
           "attributes": {
@@ -33,10 +33,10 @@
           }
         },
         {
-          "qid": "Temperature-number-1",
+          "qid": "temperature_numbers_1",
           "layer_type": "number",
           "css": "numbers/numbers.css",
-          "parameter": "Temperature",
+          "parameter": "temperature",
           "label": {
             "dx": 0,
             "dy": 3,
@@ -52,6 +52,7 @@
           }
         },
         {
+          "qid": "city_marker_1",
           "layer_type": "symbol",
           "positions": {
             "layout": "latlon",
@@ -67,6 +68,32 @@
           "symbol": "dot",
           "scale": 7
         },
+
+
+
+        {
+          "qid": "wind_arrow",
+          "layer_type": "arrow",
+          "css": "arrows/windarrow.css",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "attributes": {
+            "id": "wind_arrows",
+            "class": "WindArrow"
+          },
+          "arrows": "json:arrows/windarrow.json",
+          "positions": {
+            "x": 5,
+            "y": 5,
+            "dx": 30,
+            "dy": 30,
+            "ddx": 15
+          }
+        },
+
+
+
+
         {
           "qid": "weathersymbol-1",
           "layer_type": "symbol",
@@ -100,7 +127,7 @@
     {
       "time_offset": 180,
       "qid": "v2-",
-      "producer": "ecmwf_maailma_pinta",
+      "producer": "gfs_painepinta",
       "attributes": {
         "id": "view2",
         "transform": "translate(600 000)"
@@ -109,7 +136,7 @@
         {
           "qid": "Temperature-2",
           "layer_type": "isoband",
-          "parameter": "Temperature",
+          "parameter": "temperature",
           "isobands": "json:isobands/Temperature.json",
           "css": "isobands/Temperature.css"
         },
@@ -117,7 +144,7 @@
           "qid": "Temperature-number-2",
           "layer_type": "number",
           "css": "numbers/numbers.css",
-          "parameter": "Temperature",
+          "parameter": "temperature",
           "label": {
             "dx": 0,
             "dy": 3,
@@ -154,7 +181,7 @@
     {
       "time_offset": 360,
       "qid": "v3-",
-      "producer": "ecmwf_maailma_pinta",
+      "producer": "gfs_painepinta",
       "attributes": {
         "id": "view3",
         "transform": "translate(0 800)"
@@ -163,7 +190,7 @@
         {
           "qid": "Temperature-3",
           "layer_type": "isoband",
-          "parameter": "Temperature",
+          "parameter": "temperature",
           "isobands": "json:isobands/Temperature.json",
           "css": "isobands/Temperature.css"
         },
@@ -171,7 +198,7 @@
           "qid": "Temperature-number-3",
           "layer_type": "number",
           "css": "numbers/numbers.css",
-          "parameter": "Temperature",
+          "parameter": "temperature",
           "label": {
             "dx": 0,
             "dy": 3,
@@ -207,7 +234,7 @@
     },
     {
       "qid": "v4-",
-      "producer": "ecmwf_maailma_pinta",
+      "producer": "gfs_painepinta",
       "attributes": {
         "id": "view4",
         "transform": "translate(600 800)"
@@ -216,7 +243,7 @@
         {
           "qid": "Temperature-4",
           "layer_type": "isoband",
-          "parameter": "Temperature",
+          "parameter": "temperature",
           "isobands": "json:isobands/Temperature.json",
           "css": "isobands/Temperature.css"
         },
@@ -224,7 +251,7 @@
           "qid": "Temperature-number-4",
           "layer_type": "number",
           "css": "numbers/numbers.css",
-          "parameter": "Temperature",
+          "parameter": "temperature",
           "label": {
             "dx": 0,
             "dy": 3,
