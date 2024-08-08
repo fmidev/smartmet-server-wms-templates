@@ -16,24 +16,30 @@
   },
   "views": [
     {
-      "qid": "v1-",
-      "producer": "gfs_painepinta",
+      // 1. a map visualizing the temperature with an isoband heatmap and numbers in celcius.
+      "qid": "map_1",
       "attributes": {
         "transform": "translate(0 0)"
       },
       "layers": [
         {
+          // temperature visualized by isobands.
           "qid": "temperature_visualization_1",
+          "producer": "gfs_world",
           "layer_type": "isoband",
           "parameter": "temperature",
+          // the color ranges are determined in the Temperature.json file.
           "isobands": "json:isobands/Temperature.json",
+          // the colors called by Temperature.json file are determined in Temperature.css file.
           "css": "isobands/Temperature.css",
           "attributes": {
             "shape-rendering": "crispEdges"
           }
         },
         {
+          // temperature vizualized by numbers (celcius).
           "qid": "temperature_numbers_1",
+          "producer": "gfs_world",
           "layer_type": "number",
           "css": "numbers/numbers.css",
           "parameter": "temperature",
@@ -48,10 +54,12 @@
             "y": 18,
             "dx": 30,
             "dy": 30,
+            // ddx determines how offset every other row is.
             "ddx": 15
           }
         },
         {
+          // a circle symbol for the city of Helsinki.
           "qid": "city_marker_1",
           "layer_type": "symbol",
           "positions": {
@@ -65,37 +73,106 @@
             "dx": 0,
             "dy": 0
           },
+          // a round symbol established in resources/symbols/dot
           "symbol": "dot",
-          "scale": 7
+          "scale": 5
         },
-
-
-
+        // this pulls the europe country borders from map_product_refs.json (reference established in line 6).
+        "ref:refs.Europe_boundaries"
+        // layers are ordered from bottom to top, so the last layer is drawn on top of the previous layers.
+        // in this map's case, the country borders (Europe_boundaries) are drawn on top of everything else. 
+        // for example on the third map (map_3) the smartsymbols shouldn't be obscured by the country borders, 
+        // so the smartsymbols are last in order in the hierarchy.
+      ]
+    },
+    {
+      // 2. a map visualizing the wind speed and direction with arrows and numbers.
+      "qid": "map_2",
+      "attributes": {
+        "id": "view2",
+        // the position of the entire map and everything its layers contain
+        "transform": "translate(600 000)"
+      },
+      "layers": [
         {
+          // the arrows are drawn only if the wind speed is over 1 m/s (determined by windarrow.json).
+
+          // sometimes the arrow is not drawn even if the speed is over 1 m/s. The likely reason is that the wind arrow and 
+          // the wind speed number take their observations from their respective coordinates on the map, so the speed on 
+          // the arrow coordinate can be below 1 m/s even if the speed on the number coordinate is over 1 m/s.
+
+          // Wind speed visualized by a number
+          "qid": "WindSpeed-number",
+          "producer": "gfs_world",
+          "layer_type": "number",
+          "css": "numbers/numbers.css",
+          "parameter": "WindSpeedMS",
+          "label": {
+            "dx": 0,
+            "dy": 3,
+            "precision": 1,
+            "missing": "-"
+          },
+          "positions": {
+            "x": 5,
+            "y": 8,
+            "dx": 50,
+            "dy": 50,
+            "ddx": 21
+          }
+        },
+        {
+          // Wind direction visualized by an arrow
           "qid": "wind_arrow",
+          "producer": "gfs_world",
           "layer_type": "arrow",
           "css": "arrows/windarrow.css",
-          "direction": "WindDirection",
-          "speed": "WindSpeedMS",
+          "u": "WindUMS",
+          "v": "WindVMS",
           "attributes": {
             "id": "wind_arrows",
             "class": "WindArrow"
           },
           "arrows": "json:arrows/windarrow.json",
           "positions": {
-            "x": 5,
-            "y": 5,
-            "dx": 30,
-            "dy": 30,
-            "ddx": 15
+            "x": 12,
+            "y": 20,
+            "dx": 50,
+            "dy": 50,
+            "ddx": 21
           }
         },
-
-
-
-
+        {
+          "layer_type": "symbol",
+          "positions": {
+            "layout": "latlon",
+            "locations": [
+              {
+                "longitude": 24.93417,
+                "latitude": 60.17556
+              }
+            ],
+            "dx": 0,
+            "dy": 0
+          },
+          "symbol": "dot",
+          "scale": 5
+        },
+        "ref:refs.Europe_boundaries"
+      ]
+    },
+    {
+      // 3. a map visualizing the weather with smartsymbols.
+      "qid": "map_3",
+      "attributes": {
+        "id": "view3",
+        "transform": "translate(0 800)"
+      },
+      "layers": [
+        "ref:refs.Europe_boundaries",
         {
           "qid": "weathersymbol-1",
+          "producer": "gfs_world",
           "layer_type": "symbol",
           "css": "symbols/smartweather.css",
           "symbols": "json:symbols/smartweather.json",
@@ -104,13 +181,43 @@
           "positions": {
             "layout": "latlon",
             "locations": [
+              // Here's an example query to check by coordinates if the producer has the needed data (in this example, Helsinki):
+              // http://smartmet.fmi.fi/timeseries?lonlat=24.941325%2C60.173437&producer=gfs_world&param=utctime,smartsymbol
+              // if the data is missing the smartsymbol won't be drawn.
               {
-                "longitude": 24.93417,
-                "latitude": 60.17556
+                // Helsinki
+                "longitude": 24.941325,
+                "latitude": 60.173437
               },
               {
+                // Turku
                 "longitude": 22.264824,
                 "latitude": 60.45451
+              },
+              {
+                // Jyväskylä
+                "longitude": 25.747257,
+                "latitude": 62.242603
+              },
+              {
+                // Rovaniemi
+                "longitude": 25.726967,
+                "latitude": 66.503059
+              },
+              {
+                // Oulu
+                "longitude": 25.469885,
+                "latitude":  65.021545
+              },
+              {
+                // Joensuu
+                "longitude": 29.736916,
+                "latitude":  62.607662
+              },
+              {
+                // Saariselkä
+                "longitude": 27.414838,
+                "latitude":  68.419817
               }
             ],
             "dx": 0,
@@ -120,135 +227,32 @@
             "id": "weather_1",
             "class": "Weather"
           }
-        },
-        "ref:refs.Europe_boundaries"
+        }
       ]
     },
     {
-      "time_offset": 180,
-      "qid": "v2-",
-      "producer": "gfs_painepinta",
-      "attributes": {
-        "id": "view2",
-        "transform": "translate(600 000)"
-      },
-      "layers": [
-        {
-          "qid": "Temperature-2",
-          "layer_type": "isoband",
-          "parameter": "temperature",
-          "isobands": "json:isobands/Temperature.json",
-          "css": "isobands/Temperature.css"
-        },
-        {
-          "qid": "Temperature-number-2",
-          "layer_type": "number",
-          "css": "numbers/numbers.css",
-          "parameter": "temperature",
-          "label": {
-            "dx": 0,
-            "dy": 3,
-            "precision": 0,
-            "missing": "-"
-          },
-          "positions": {
-            "x": 20,
-            "y": 18,
-            "dx": 30,
-            "dy": 30,
-            "ddx": 15
-          }
-        },
-        {
-          "layer_type": "symbol",
-          "positions": {
-            "layout": "latlon",
-            "locations": [
-              {
-                "longitude": 24.93417,
-                "latitude": 60.17556
-              }
-            ],
-            "dx": 0,
-            "dy": 0
-          },
-          "symbol": "dot",
-          "scale": 7
-        },
-        "ref:refs.Europe_boundaries"
-      ]
-    },
-    {
+      // 4. same map as map_1 with with time offset.
+      
+      // time_offset offsets the forecast time by x minutes (in this case 6 hours).
+      // therefore this map shows the forecast 6 hours ahead of map_1.
       "time_offset": 360,
-      "qid": "v3-",
-      "producer": "gfs_painepinta",
-      "attributes": {
-        "id": "view3",
-        "transform": "translate(0 800)"
-      },
-      "layers": [
-        {
-          "qid": "Temperature-3",
-          "layer_type": "isoband",
-          "parameter": "temperature",
-          "isobands": "json:isobands/Temperature.json",
-          "css": "isobands/Temperature.css"
-        },
-        {
-          "qid": "Temperature-number-3",
-          "layer_type": "number",
-          "css": "numbers/numbers.css",
-          "parameter": "temperature",
-          "label": {
-            "dx": 0,
-            "dy": 3,
-            "precision": 0,
-            "missing": "-"
-          },
-          "positions": {
-            "x": 20,
-            "y": 18,
-            "dx": 30,
-            "dy": 30,
-            "ddx": 15
-          }
-        },
-        {
-          "layer_type": "symbol",
-          "positions": {
-            "layout": "latlon",
-            "locations": [
-              {
-                "longitude": 24.93417,
-                "latitude": 60.17556
-              }
-            ],
-            "dx": 0,
-            "dy": 0
-          },
-          "symbol": "dot",
-          "scale": 7
-        },
-        "ref:refs.Europe_boundaries"
-      ]
-    },
-    {
-      "qid": "v4-",
-      "producer": "gfs_painepinta",
+      "qid": "map_4",
       "attributes": {
         "id": "view4",
         "transform": "translate(600 800)"
       },
       "layers": [
         {
-          "qid": "Temperature-4",
+          "qid": "temperature_visualization_4",
+          "producer": "gfs_world",
           "layer_type": "isoband",
           "parameter": "temperature",
           "isobands": "json:isobands/Temperature.json",
           "css": "isobands/Temperature.css"
         },
         {
-          "qid": "Temperature-number-4",
+          "qid": "Temperature-numbers-4",
+          "producer": "gfs_world",
           "layer_type": "number",
           "css": "numbers/numbers.css",
           "parameter": "temperature",
@@ -280,7 +284,7 @@
             "dy": 0
           },
           "symbol": "dot",
-          "scale": 7
+          "scale": 5
         },
         "ref:refs.Europe_boundaries"
       ]
