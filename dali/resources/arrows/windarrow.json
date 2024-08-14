@@ -1,0 +1,7 @@
+[
+  {
+    // minimum wind speed in meters to draw an arrow.
+    "lolimit": 1,
+    "symbol": "windarrow"
+  }
+]
