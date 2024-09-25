@@ -25,7 +25,7 @@
         {
           // temperature visualized by isobands.
           "qid": "temperature_visualization_1",
-          "producer": "gfs_world",
+          "producer": "gfs",
           "layer_type": "isoband",
           "parameter": "temperature",
           // the color ranges are determined in the Temperature.json file.
@@ -39,7 +39,7 @@
         {
           // temperature vizualized by numbers (celcius).
           "qid": "temperature_numbers_1",
-          "producer": "gfs_world",
+          "producer": "gfs",
           "layer_type": "number",
           "css": "numbers/numbers.css",
           "parameter": "temperature",
@@ -103,7 +103,7 @@
 
           // Wind speed visualized by a number
           "qid": "WindSpeed-number",
-          "producer": "gfs_world",
+          "producer": "gfs",
           "layer_type": "number",
           "css": "numbers/numbers.css",
           "parameter": "WindSpeedMS",
@@ -124,7 +124,7 @@
         {
           // Wind direction visualized by an arrow
           "qid": "wind_arrow",
-          "producer": "gfs_world",
+          "producer": "gfs",
           "layer_type": "arrow",
           "css": "arrows/windarrow.css",
           "u": "WindUMS",
@@ -172,7 +172,7 @@
         "ref:refs.Europe_boundaries",
         {
           "qid": "weathersymbol-1",
-          "producer": "gfs_world",
+          "producer": "gfs",
           "layer_type": "symbol",
           "css": "symbols/smartweather.css",
           "symbols": "json:symbols/smartweather.json",
@@ -182,7 +182,7 @@
             "layout": "latlon",
             "locations": [
               // Here's an example query to check by coordinates if the producer has the needed data (in this example, Helsinki):
-              // http://smartmet.fmi.fi/timeseries?lonlat=24.941325%2C60.173437&producer=gfs_world&param=utctime,smartsymbol
+              // http://smartmet.fmi.fi/timeseries?lonlat=24.941325%2C60.173437&producer=gfs&param=utctime,smartsymbol
               // if the data is missing the smartsymbol won't be drawn.
               {
                 // Helsinki
@@ -244,7 +244,7 @@
       "layers": [
         {
           "qid": "temperature_visualization_4",
-          "producer": "gfs_world",
+          "producer": "gfs",
           "layer_type": "isoband",
           "parameter": "temperature",
           "isobands": "json:isobands/Temperature.json",
@@ -252,7 +252,7 @@
         },
         {
           "qid": "Temperature-numbers-4",
-          "producer": "gfs_world",
+          "producer": "gfs",
           "layer_type": "number",
           "css": "numbers/numbers.css",
           "parameter": "temperature",
