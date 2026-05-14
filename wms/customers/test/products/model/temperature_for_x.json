@@ -8,7 +8,7 @@
       "layer_type": "isoband",
       "isobands": "json:isobands/temperature.json",
       "css": "isobands/temperature.css",
-      "parameter": "Pressure",
+      "parameter": "temperature",
       "attributes": {
         "shape-rendering": "crispEdges"
       }

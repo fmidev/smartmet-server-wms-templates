@@ -1,0 +1,33 @@
+{
+    "title": {
+    "en": "FMI Wild fires PM 2.5 VFSP-WASE",
+    "fi": "FMI Maastopalot PM 2.5 VFSP-WASE",
+    "sw": "FMI Skogsbränder PM 2.5 VFSP-WASE"
+  },
+    "abstract": {
+    "en": "Particle (PM 2.5) forecast of wild fires. Product of SILAM-model, VFSP-WASE data.",
+    "fi": "Maastopalojen hiukkasennuste (PM 2.5). SILAM-mallin VFSP-WASE tuote.",
+    "sw": "Partikelprognos (PM 2.5) för skogsbränder. Produkt av SILAM-modellen, VFSP-WASE data."
+  },
+    "source": "grid",
+    "legend_url_layer": "test:legends:wildfires_pm25pm",
+    "views": [
+      {
+        "producer": "SILAM_AQ",
+        "layers": [
+          {
+            "qid": "l",
+            "layer_type": "isoband",
+            "parameter": "VF-PM2_5-UGM:SILAM_AQ:1060",
+            "isobands": "json:isobands/FF-PM2_5.json",
+            "css": "isobands/FF-PM2_5.css",
+            "attributes": {
+              "shape-rendering": "crispEdges"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
+  

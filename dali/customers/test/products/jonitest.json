@@ -1,0 +1,1640 @@
+{
+  "title": "Forecast Format for website",
+  "width": 800,
+  "height": 940,
+  "producer": "wrf_bhutan_surface",
+  "projection": {
+    "xsize": 700,
+    "ysize": 400,
+    "crs": "EPSG:4326",
+    "x1": 88.632202,
+    "y1": 26.588527,
+    "x2": 92.246704,
+    "y2": 28.343065
+  },
+  "views": [
+    {
+      "qid": "map_1",
+      "attributes": {
+        "id": "view1",
+	"transform": "translate(0 0)"
+      },
+      "layers": [
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Weather Forecast",
+          "attributes": {
+            "x": 420,
+            "y": 60,
+            "font-size": 24,
+            "text-anchor": "middle",
+            "font-weight": "bold",
+            "fill": "Black"
+          }
+        },
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Forecast for :",
+          "attributes": {
+            "x": 114,
+            "y": 105,
+            "font-size": 14,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "layer_type": "time",
+          "timestamp": "validtime",
+          "timezone": "Asia/Thimphu",
+          "format": "%d %B %Y, %H%M",
+          "attributes": {
+            "font-size": "13px"
+          },
+          "x": 170,
+          "y": 105
+        },
+	{
+          "qid": "vert_line",
+          "layer_type": "symbol",
+          "positions": {
+            "x": 100,
+            "y": 100,
+            "dx": 10,
+            "dy": 10
+          },
+          "symbol": "vertical_line",
+	  "scale": 1
+        },
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Gasa",
+          "attributes": {
+            "x": 90,
+            "y": 140,
+            "font-size": 18,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "qid": "temperature-weathersymbols",
+          "layer_type": "symbol",
+          "symbols": "json:symbols/smartsymbol.json",
+          "parameter": "smartsymbol",
+          "scale": 2,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Gasa",
+            "dx": -115,
+            "dy": 90
+          }
+        },
+        {
+          "qid": "temperature-numbers",
+          "layer_type": "number",
+          "numbers": "json:numbers/temperatures.json",
+          "css": "numbers/integers_9.css",
+          "parameter": "Temperature",
+          "label": "json:numbers/integers_9.json",
+          "attributes": {
+            "font-size": 16,
+            "text-anchor": "middle"
+          },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Gasa",
+            "dx": -140,
+            "dy": 163
+          }
+        },
+        {
+          "qid": "wind_symbols",
+          "layer_type": "arrow",
+          "arrows": "json:arrows/wind_dir.json",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "scale": 0.4,
+          "minrotationspeed": 0.5,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Gasa",
+            "dx": -90,
+            "dy": 157
+          }
+        },
+        {
+          "qid": "wind_numbers",
+          "layer_type": "number",
+          "css": "numbers/integers_wind.css",
+          "parameter": "WindSpeedMS",
+          "label": "json:numbers/integers_wind.json",
+	        "text-anchor": "middle",
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Gasa",
+            "dx": -97,
+            "dy": 157
+          }
+        }
+      ]
+    },
+    {
+      "qid": "map_2",
+      "attributes": {
+        "id": "view2"
+      },
+      "layers": [
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Lhuentse",
+          "attributes": {
+            "x": 245,
+            "y": 140,
+            "font-size": 18,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "qid": "temperature-weathersymbols",
+          "layer_type": "symbol",
+          "symbols": "json:symbols/smartsymbol.json",
+          "parameter": "smartsymbol",
+          "scale": 2,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Lhuentse",
+            "dx": -243,
+            "dy": 37
+          }
+        },
+        {
+          "qid": "temperature-numbers",
+          "layer_type": "number",
+          "numbers": "json:numbers/temperatures.json",
+          "css": "numbers/integers_9.css",
+          "parameter": "Temperature",
+          "label": "json:numbers/integers_9.json",
+          "attributes": {
+            "font-size": 16,
+            "text-anchor": "middle"
+          },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Lhuentse",
+            "dx": -267,
+            "dy": 110
+          }
+        },
+        {
+          "qid": "wind_symbols",
+          "layer_type": "arrow",
+          "arrows": "json:arrows/wind_dir.json",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "scale": 0.4,
+          "minrotationspeed": 0.5,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Lhuentse",
+            "dx": -216,
+            "dy": 104
+          }
+        },
+        {
+          "qid": "wind_numbers",
+          "layer_type": "number",
+          "css": "numbers/integers_wind.css",
+          "parameter": "WindSpeedMS",
+          "label": "json:numbers/integers_wind.json",
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Lhuentse",
+            "dx": -219,
+            "dy": 103
+          }
+        }
+      ]
+    },
+    {
+      "qid": "map_3",
+      "attributes": {
+        "id": "view3"
+      },
+      "layers": [
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Trashiyangtse",
+          "attributes": {
+            "x": 402,
+            "y": 140,
+            "font-size": 18,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "qid": "temperature-weathersymbols",
+          "layer_type": "symbol",
+          "symbols": "json:symbols/smartsymbol.json",
+          "parameter": "smartsymbol",
+          "scale": 2,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Yangtse",
+            "dx": -150,
+            "dy": 24
+          }
+        },
+        {
+          "qid": "temperature-numbers",
+          "layer_type": "number",
+          "numbers": "json:numbers/temperatures.json",
+          "css": "numbers/integers_9.css",
+          "parameter": "Temperature",
+          "label": "json:numbers/integers_9.json",
+          "attributes": {
+            "font-size": 16,
+            "text-anchor": "middle"
+          },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Yangtse",
+            "dx": -175,
+            "dy": 97
+          }
+        },
+        {
+          "qid": "wind_symbols",
+          "layer_type": "arrow",
+          "arrows": "json:arrows/wind_dir.json",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "scale": 0.4,
+          "minrotationspeed": 0.5,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Yangtse",
+            "dx": -125,
+            "dy": 91
+          }
+        },
+        {
+          "qid": "wind_numbers",
+          "layer_type": "number",
+          "css": "numbers/integers_wind.css",
+          "parameter": "WindSpeedMS",
+          "label": "json:numbers/integers_wind.json",
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Yangtse",
+            "dx": -128,
+            "dy": 90
+          }
+        }
+      ]
+    },
+    {
+      "qid": "map_4",
+      "attributes": {
+        "id": "view4"
+      },
+      "layers": [
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Trongsa",
+          "attributes": {
+            "x": 554,
+            "y": 140,
+            "font-size": 18,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "qid": "temperature-weathersymbols",
+          "layer_type": "symbol",
+          "symbols": "json:symbols/smartsymbol.json",
+          "parameter": "smartsymbol",
+          "scale": 2,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Trongsa",
+            "dx": 195,
+            "dy": -1
+          }
+        },
+        {
+          "qid": "temperature-numbers",
+          "layer_type": "number",
+          "numbers": "json:numbers/temperatures.json",
+          "css": "numbers/integers_9.css",
+          "parameter": "Temperature",
+          "label": "json:numbers/integers_9.json",
+          "attributes": {
+            "font-size": 16,
+            "text-anchor": "middle"
+          },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Trongsa",
+            "dx": 171,
+            "dy": 72
+          }
+        },
+        {
+          "qid": "wind_symbols",
+          "layer_type": "arrow",
+          "arrows": "json:arrows/wind_dir.json",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "scale": 0.4,
+          "minrotationspeed": 0.5,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Trongsa",
+            "dx": 222,
+            "dy": 66
+          }
+        },
+        {
+          "qid": "wind_numbers",
+          "layer_type": "number",
+          "css": "numbers/integers_wind.css",
+          "parameter": "WindSpeedMS",
+          "label": "json:numbers/integers_wind.json",
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Trongsa",
+            "dx": 219,
+            "dy": 65
+          }
+        }
+      ]
+    },
+    {
+      "qid": "map_5",
+      "attributes": {
+        "id": "view5"
+      },
+      "layers": [
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Bumthang",
+          "attributes": {
+            "x": 706,
+            "y": 140,
+            "font-size": 18,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "qid": "temperature-weathersymbols",
+          "layer_type": "symbol",
+          "symbols": "json:symbols/smartsymbol.json",
+          "parameter": "smartsymbol",
+          "scale": 2,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Bumthang",
+            "dx": 290,
+            "dy": 21
+          }
+        },
+        {
+          "qid": "temperature-numbers",
+          "layer_type": "number",
+          "numbers": "json:numbers/temperatures.json",
+          "css": "numbers/integers_9.css",
+          "parameter": "Temperature",
+          "label": "json:numbers/integers_9.json",
+          "attributes": {
+            "font-size": 16,
+            "text-anchor": "middle"
+          },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Bumthang",
+            "dx": 265,
+            "dy": 93
+          }
+        },
+        {
+          "qid": "wind_symbols",
+          "layer_type": "arrow",
+          "arrows": "json:arrows/wind_dir.json",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "scale": 0.4,
+          "minrotationspeed": 0.5,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Bumthang",
+            "dx": 315,
+            "dy": 88
+          }
+        },
+        {
+          "qid": "wind_numbers",
+          "layer_type": "number",
+          "css": "numbers/integers_wind.css",
+          "parameter": "WindSpeedMS",
+          "label": "json:numbers/integers_wind.json",
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Bumthang",
+            "dx": 312,
+            "dy": 87
+          }
+        }
+      ]
+    },
+    {
+      "qid": "map_6",
+      "attributes": {
+        "id": "view6"
+      },
+      "layers": [
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Haa",
+          "attributes": {
+            "x": 90,
+            "y": 320,
+            "font-size": 16,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "qid": "temperature-weathersymbols",
+          "layer_type": "symbol",
+          "symbols": "json:symbols/smartsymbol.json",
+          "parameter": "smartsymbol",
+          "scale": 2,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Haa",
+            "dx": -9,
+            "dy": 140
+          }
+        },
+        {
+          "qid": "temperature-numbers",
+          "layer_type": "number",
+          "numbers": "json:numbers/temperatures.json",
+          "css": "numbers/integers_9.css",
+          "parameter": "Temperature",
+          "label": "json:numbers/integers_9.json",
+          "attributes": {
+            "font-size": 16,
+            "text-anchor": "middle"
+          },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Haa",
+            "dx": -34,
+            "dy": 213
+          }
+        },
+        {
+          "qid": "wind_symbols",
+          "layer_type": "arrow",
+          "arrows": "json:arrows/wind_dir.json",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "scale": 0.4,
+          "minrotationspeed": 0.5,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Haa",
+            "dx": 16,
+            "dy": 207
+          }
+        },
+        {
+          "qid": "wind_numbers",
+          "layer_type": "number",
+          "css": "numbers/integers_wind.css",
+          "parameter": "WindSpeedMS",
+          "label": "json:numbers/integers_wind.json",
+    	  "attributes": {
+            "text-anchor": "middle"
+         },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Haa",
+            "dx": 15,
+            "dy": 206
+          }
+        }
+      ]
+    },
+    {
+      "qid": "map_7",
+      "attributes": {
+        "id": "view7"
+      },
+      "layers": [
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Paro",
+          "attributes": {
+            "x": 245,
+            "y": 320,
+            "font-size": 16,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "qid": "temperature-weathersymbols",
+          "layer_type": "symbol",
+          "symbols": "json:symbols/smartsymbol.json",
+          "parameter": "smartsymbol",
+          "scale": 2,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Paro",
+            "dx": 100,
+            "dy": 162
+          }
+        },
+        {
+          "qid": "temperature-numbers",
+          "layer_type": "number",
+          "numbers": "json:numbers/temperatures.json",
+          "css": "numbers/integers_9.css",
+          "parameter": "Temperature",
+          "label": "json:numbers/integers_9.json",
+          "attributes": {
+            "font-size": 16,
+            "text-anchor": "middle"
+          },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Paro",
+            "dx": 76,
+            "dy": 235
+          }
+        },
+        {
+          "qid": "wind_symbols",
+          "layer_type": "arrow",
+          "arrows": "json:arrows/wind_dir.json",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "scale": 0.4,
+          "minrotationspeed": 0.5,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Paro",
+            "dx": 127,
+            "dy": 229
+          }
+        },
+        {
+          "qid": "wind_numbers",
+          "layer_type": "number",
+          "css": "numbers/integers_wind.css",
+          "parameter": "WindSpeedMS",
+          "label": "json:numbers/integers_wind.json",
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Paro",
+            "dx": 120,
+            "dy": 228
+          }
+        }
+      ]
+    },
+    {
+      "qid": "map_8",
+      "attributes": {
+        "id": "view8"
+      },
+      "layers": [
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Thimphu",
+          "attributes": {
+            "x": 402,
+            "y": 320,
+            "font-size": 16,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "qid": "temperature-weathersymbols",
+          "layer_type": "symbol",
+          "symbols": "json:symbols/smartsymbol.json",
+          "parameter": "smartsymbol",
+          "scale": 2,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Thimphu",
+            "dx": 208,
+            "dy": 171
+          }
+        },
+        {
+          "qid": "temperature-numbers",
+          "layer_type": "number",
+          "numbers": "json:numbers/temperatures.json",
+          "css": "numbers/integers_9.css",
+          "parameter": "Temperature",
+          "label": "json:numbers/integers_9.json",
+          "attributes": {
+            "font-size": 16,
+            "text-anchor": "middle"
+          },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Thimphu",
+            "dx": 185,
+            "dy": 244
+          }
+        },
+        {
+          "qid": "wind_symbols",
+          "layer_type": "arrow",
+          "arrows": "json:arrows/wind_dir.json",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "scale": 0.4,
+          "minrotationspeed": 0.5,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Thimphu",
+            "dx": 235,
+            "dy": 238
+          }
+        },
+        {
+          "qid": "wind_numbers",
+          "layer_type": "number",
+          "css": "numbers/integers_wind.css",
+          "parameter": "WindSpeedMS",
+          "label": "json:numbers/integers_wind.json",
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Thimphu",
+            "dx": 228,
+            "dy": 237
+          }
+        }
+      ]
+    },
+    {
+      "qid": "map_9",
+      "attributes": {
+        "id": "view9"
+      },
+      "layers": [
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Punakha",
+          "attributes": {
+            "x": 554,
+            "y": 320,
+            "font-size": 16,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "qid": "temperature-weathersymbols",
+          "layer_type": "symbol",
+          "symbols": "json:symbols/smartsymbol.json",
+          "parameter": "smartsymbol",
+          "scale": 2,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Punakha",
+            "dx": 317,
+            "dy": 199
+          }
+        },
+        {
+          "qid": "temperature-numbers",
+          "layer_type": "number",
+          "numbers": "json:numbers/temperatures.json",
+          "css": "numbers/integers_9.css",
+          "parameter": "Temperature",
+          "label": "json:numbers/integers_9.json",
+          "attributes": {
+            "font-size": 16,
+            "text-anchor": "middle"
+          },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Punakha",
+            "dx": 293,
+            "dy": 272
+          }
+        },
+        {
+          "qid": "wind_symbols",
+          "layer_type": "arrow",
+          "arrows": "json:arrows/wind_dir.json",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "scale": 0.4,
+          "minrotationspeed": 0.5,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Punakha",
+            "dx": 344,
+            "dy": 266
+          }
+        },
+        {
+          "qid": "wind_numbers",
+          "layer_type": "number",
+          "css": "numbers/integers_wind.css",
+          "parameter": "WindSpeedMS",
+          "label": "json:numbers/integers_wind.json",
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Punakha",
+            "dx": 341,
+            "dy": 265
+          }
+        }
+      ]
+    },
+    {
+      "qid": "map_10",
+      "attributes": {
+        "id": "view10"
+      },
+      "layers": [
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Wangduephodrang",
+          "attributes": {
+            "x": 706,
+            "y": 320,
+            "font-size": 16,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "qid": "temperature-weathersymbols",
+          "layer_type": "symbol",
+          "symbols": "json:symbols/smartsymbol.json",
+          "parameter": "smartsymbol",
+          "scale": 2,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Wangduephodrang",
+            "dx": 468,
+            "dy": 175
+          }
+        },
+        {
+          "qid": "temperature-numbers",
+          "layer_type": "number",
+          "numbers": "json:numbers/temperatures.json",
+          "css": "numbers/integers_9.css",
+          "parameter": "Temperature",
+          "label": "json:numbers/integers_9.json",
+          "attributes": {
+            "font-size": 16,
+            "text-anchor": "middle"
+          },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Wangduephodrang",
+            "dx": 444,
+            "dy": 247
+          }
+        },
+        {
+          "qid": "wind_symbols",
+          "layer_type": "arrow",
+          "arrows": "json:arrows/wind_dir.json",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "scale": 0.4,
+          "minrotationspeed": 0.5,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Wangduephodrang",
+            "dx": 493,
+            "dy": 242
+          }
+        },
+        {
+          "qid": "wind_numbers",
+          "layer_type": "number",
+          "css": "numbers/integers_wind.css",
+          "parameter": "WindSpeedMS",
+          "label": "json:numbers/integers_wind.json",
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Wangduephodrang",
+            "dx": 486,
+            "dy": 241
+          }
+        }
+      ]
+    },
+    {
+      "qid": "map_11",
+      "attributes": {
+        "id": "view11"
+      },
+      "layers": [
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Samtse",
+          "attributes": {
+            "x": 90,
+            "y": 500,
+            "font-size": 16,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "qid": "temperature-weathersymbols",
+          "layer_type": "symbol",
+          "symbols": "json:symbols/smartsymbol.json",
+          "parameter": "smartsymbol",
+          "scale": 2,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Samtse",
+            "dx": 10,
+            "dy": 225
+          }
+        },
+        {
+          "qid": "temperature-numbers",
+          "layer_type": "number",
+          "numbers": "json:numbers/temperatures.json",
+          "css": "numbers/integers_9.css",
+          "parameter": "Temperature",
+          "label": "json:numbers/integers_9.json",
+          "attributes": {
+            "font-size": 16,
+            "text-anchor": "middle"
+          },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Samtse",
+            "dx": -15,
+            "dy": 300
+          }
+        },
+        {
+          "qid": "wind_symbols",
+          "layer_type": "arrow",
+          "arrows": "json:arrows/wind_dir.json",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "scale": 0.4,
+          "minrotationspeed": 0.5,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Samtse",
+            "dx": 35,
+            "dy": 294
+          }
+        },
+        {
+          "qid": "wind_numbers",
+          "layer_type": "number",
+          "css": "numbers/integers_wind.css",
+          "parameter": "WindSpeedMS",
+          "label": "json:numbers/integers_wind.json",
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Samtse",
+            "dx": 31,
+            "dy": 293
+          }
+        }
+      ]
+    },
+    {
+      "qid": "map_12",
+      "attributes": {
+        "id": "view12"
+      },
+      "layers": [
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Phuntsholing",
+          "attributes": {
+            "x": 245,
+            "y": 500,
+            "font-size": 16,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "qid": "temperature-weathersymbols",
+          "layer_type": "symbol",
+          "symbols": "json:symbols/smartsymbol.json",
+          "parameter": "smartsymbol",
+          "scale": 2,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Chhukha",
+            "dx": 105,
+            "dy": 211
+          }
+        },
+        {
+          "qid": "temperature-numbers",
+          "layer_type": "number",
+          "numbers": "json:numbers/temperatures.json",
+          "css": "numbers/integers_9.css",
+          "parameter": "Temperature",
+          "label": "json:numbers/integers_9.json",
+          "attributes": {
+            "font-size": 16,
+            "text-anchor": "middle"
+          },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Chhukha",
+            "dx": 82,
+            "dy": 286
+          }
+        },
+        {
+          "qid": "wind_symbols",
+          "layer_type": "arrow",
+          "arrows": "json:arrows/wind_dir.json",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "scale": 0.4,
+          "minrotationspeed": 0.5,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Chhukha",
+            "dx": 132,
+            "dy": 280
+          }
+        },
+        {
+          "qid": "wind_numbers",
+          "layer_type": "number",
+          "css": "numbers/integers_wind.css",
+          "parameter": "WindSpeedMS",
+          "label": "json:numbers/integers_wind.json",
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Chhukha",
+            "dx": 127,
+            "dy": 279
+          }
+        }
+      ]
+    },
+    {
+      "qid": "map_13",
+      "attributes": {
+        "id": "view13"
+      },
+      "layers": [
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Dagana",
+          "attributes": {
+            "x": 402,
+            "y": 500,
+            "font-size": 16,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "qid": "temperature-weathersymbols",
+          "layer_type": "symbol",
+          "symbols": "json:symbols/smartsymbol.json",
+          "parameter": "smartsymbol",
+          "scale": 2,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Dagana",
+            "dx": 165,
+            "dy": 268
+          }
+        },
+        {
+          "qid": "temperature-numbers",
+          "layer_type": "number",
+          "numbers": "json:numbers/temperatures.json",
+          "css": "numbers/integers_9.css",
+          "parameter": "Temperature",
+          "label": "json:numbers/integers_9.json",
+          "attributes": {
+            "font-size": 16,
+            "text-anchor": "middle"
+          },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Dagana",
+            "dx": 141,
+            "dy": 343
+          }
+        },
+        {
+          "qid": "wind_symbols",
+          "layer_type": "arrow",
+          "arrows": "json:arrows/wind_dir.json",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "scale": 0.4,
+          "minrotationspeed": 0.5,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Dagana",
+            "dx": 191,
+            "dy": 337
+          }
+        },
+        {
+          "qid": "wind_numbers",
+          "layer_type": "number",
+          "css": "numbers/integers_wind.css",
+          "parameter": "WindSpeedMS",
+          "label": "json:numbers/integers_wind.json",
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Dagana",
+            "dx": 188,
+            "dy": 336
+          }
+        }
+      ]
+    },
+    {
+      "qid": "map_14",
+      "attributes": {
+        "id": "view14"
+      },
+      "layers": [
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Gelephu",
+          "attributes": {
+            "x": 554,
+            "y": 500,
+            "font-size": 16,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "qid": "temperature-weathersymbols",
+          "layer_type": "symbol",
+          "symbols": "json:symbols/smartsymbol.json",
+          "parameter": "smartsymbol",
+          "scale": 2,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Sarpang",
+            "dx": 242,
+            "dy": 214
+          }
+        },
+        {
+          "qid": "temperature-numbers",
+          "layer_type": "number",
+          "numbers": "json:numbers/temperatures.json",
+          "css": "numbers/integers_9.css",
+          "parameter": "Temperature",
+          "label": "json:numbers/integers_9.json",
+          "attributes": {
+            "font-size": 16,
+            "text-anchor": "middle"
+          },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Sarpang",
+            "dx": 218,
+            "dy": 289
+          }
+        },
+        {
+          "qid": "wind_symbols",
+          "layer_type": "arrow",
+          "arrows": "json:arrows/wind_dir.json",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "scale": 0.4,
+          "minrotationspeed": 0.5,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Sarpang",
+            "dx": 269,
+            "dy": 283
+          }
+        },
+        {
+          "qid": "wind_numbers",
+          "layer_type": "number",
+          "css": "numbers/integers_wind.css",
+          "parameter": "WindSpeedMS",
+          "label": "json:numbers/integers_wind.json",
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Sarpang",
+            "dx": 265,
+            "dy": 282
+          }
+        }
+      ]
+    },
+    {
+      "qid": "map_15",
+      "attributes": {
+        "id": "view15"
+      },
+      "layers": [
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Tsirang",
+          "attributes": {
+            "x": 706,
+            "y": 500,
+            "font-size": 16,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "qid": "temperature-weathersymbols",
+          "layer_type": "symbol",
+          "symbols": "json:symbols/smartsymbol.json",
+          "parameter": "smartsymbol",
+          "scale": 2,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Tsirang",
+            "dx": 425,
+            "dy": 250
+          }
+        },
+        {
+          "qid": "temperature-numbers",
+          "layer_type": "number",
+          "numbers": "json:numbers/temperatures.json",
+          "css": "numbers/integers_9.css",
+          "parameter": "Temperature",
+          "label": "json:numbers/integers_9.json",
+          "attributes": {
+            "font-size": 16,
+            "text-anchor": "middle"
+          },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Tsirang",
+            "dx": 401,
+            "dy": 324
+          }
+        },
+        {
+          "qid": "wind_symbols",
+          "layer_type": "arrow",
+          "arrows": "json:arrows/wind_dir.json",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "scale": 0.4,
+          "minrotationspeed": 0.5,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Tsirang",
+            "dx": 450,
+            "dy": 319
+          }
+        },
+        {
+          "qid": "wind_numbers",
+          "layer_type": "number",
+          "css": "numbers/integers_wind.css",
+          "parameter": "WindSpeedMS",
+          "label": "json:numbers/integers_wind.json",
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Tsirang",
+            "dx": 447,
+            "dy": 318
+          }
+        }
+      ]
+    },
+    {
+      "qid": "map_16",
+      "attributes": {
+        "id": "view16"
+      },
+      "layers": [
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Zhemgang",
+          "attributes": {
+            "x": 90,
+            "y": 680,
+            "font-size": 16,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "qid": "temperature-weathersymbols",
+          "layer_type": "symbol",
+          "symbols": "json:symbols/smartsymbol.json",
+          "parameter": "smartsymbol",
+          "scale": 2,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Zhemgang",
+            "dx": -332,
+            "dy": 445
+          }
+        },
+        {
+          "qid": "temperature-numbers",
+          "layer_type": "number",
+          "numbers": "json:numbers/temperatures.json",
+          "css": "numbers/integers_9.css",
+          "parameter": "Temperature",
+          "label": "json:numbers/integers_9.json",
+          "attributes": {
+            "font-size": 16,
+            "text-anchor": "middle"
+          },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Zhemgang",
+            "dx": -357,
+            "dy": 522
+          }
+        },
+        {
+          "qid": "wind_symbols",
+          "layer_type": "arrow",
+          "arrows": "json:arrows/wind_dir.json",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "scale": 0.4,
+          "minrotationspeed": 0.5,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Zhemgang",
+            "dx": -307,
+            "dy": 516
+          }
+        },
+        {
+          "qid": "wind_numbers",
+          "layer_type": "number",
+          "css": "numbers/integers_wind.css",
+          "parameter": "WindSpeedMS",
+          "label": "json:numbers/integers_wind.json",
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Zhemgang",
+            "dx": -310,
+            "dy": 515
+          }
+        }
+      ]
+    },
+    {
+      "qid": "map_17",
+      "attributes": {
+        "id": "view17"
+      },
+      "layers": [
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Pemagatshel",
+          "attributes": {
+            "x": 245,
+            "y": 680,
+            "font-size": 16,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "qid": "temperature-weathersymbols",
+          "layer_type": "symbol",
+          "symbols": "json:symbols/smartsymbol.json",
+          "parameter": "smartsymbol",
+          "scale": 2,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Pemagatshel",
+            "dx": -285,
+            "dy": 435
+          }
+        },
+        {
+          "qid": "temperature-numbers",
+          "layer_type": "number",
+          "numbers": "json:numbers/temperatures.json",
+          "css": "numbers/integers_9.css",
+          "parameter": "Temperature",
+          "label": "json:numbers/integers_9.json",
+          "attributes": {
+            "font-size": 16,
+            "text-anchor": "middle"
+          },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Pemagatshel",
+            "dx": -308,
+            "dy": 512
+          }
+        },
+        {
+          "qid": "wind_symbols",
+          "layer_type": "arrow",
+          "arrows": "json:arrows/wind_dir.json",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "scale": 0.4,
+          "minrotationspeed": 0.5,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Pemagatshel",
+            "dx": -258,
+            "dy": 506
+          }
+        },
+        {
+          "qid": "wind_numbers",
+          "layer_type": "number",
+          "css": "numbers/integers_wind.css",
+          "parameter": "WindSpeedMS",
+          "label": "json:numbers/integers_wind.json",
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Pemagatshel",
+            "dx": -261,
+            "dy": 505
+          }
+        }
+      ]
+    },
+    {
+      "qid": "map_18",
+      "attributes": {
+        "id": "view18"
+      },
+      "layers": [
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Mongar",
+          "attributes": {
+            "x": 402,
+            "y": 680,
+            "font-size": 16,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "qid": "temperature-weathersymbols",
+          "layer_type": "symbol",
+          "symbols": "json:symbols/smartsymbol.json",
+          "parameter": "smartsymbol",
+          "scale": 2,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Monggar",
+            "dx": -100,
+            "dy": 489
+          }
+        },
+        {
+          "qid": "temperature-numbers",
+          "layer_type": "number",
+          "numbers": "json:numbers/temperatures.json",
+          "css": "numbers/integers_9.css",
+          "parameter": "Temperature",
+          "label": "json:numbers/integers_9.json",
+          "attributes": {
+            "font-size": 16,
+            "text-anchor": "middle"
+          },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Monggar",
+            "dx": -124,
+            "dy": 566
+          }
+        },
+        {
+          "qid": "wind_symbols",
+          "layer_type": "arrow",
+          "arrows": "json:arrows/wind_dir.json",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "scale": 0.4,
+          "minrotationspeed": 0.5,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Monggar",
+            "dx": -74,
+            "dy": 560
+          }
+        },
+        {
+          "qid": "wind_numbers",
+          "layer_type": "number",
+          "css": "numbers/integers_wind.css",
+          "parameter": "WindSpeedMS",
+          "label": "json:numbers/integers_wind.json",
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Monggar",
+            "dx": -77,
+            "dy": 559
+          }
+        }
+      ]
+    },
+    {
+      "qid": "map_19",
+      "attributes": {
+        "id": "view19"
+      },
+      "layers": [
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "SamdrupJongkhar",
+          "attributes": {
+            "x": 554,
+            "y": 680,
+            "font-size": 16,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "qid": "temperature-weathersymbols",
+          "layer_type": "symbol",
+          "symbols": "json:symbols/smartsymbol.json",
+          "parameter": "smartsymbol",
+          "scale": 2,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Samdrupjongkhar",
+            "dx": 2,
+            "dy": 381
+          }
+        },
+        {
+          "qid": "temperature-numbers",
+          "layer_type": "number",
+          "numbers": "json:numbers/temperatures.json",
+          "css": "numbers/integers_9.css",
+          "parameter": "Temperature",
+          "label": "json:numbers/integers_9.json",
+          "attributes": {
+            "font-size": 16,
+            "text-anchor": "middle"
+          },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Samdrupjongkhar",
+            "dx": -22,
+            "dy": 458
+          }
+        },
+        {
+          "qid": "wind_symbols",
+          "layer_type": "arrow",
+          "arrows": "json:arrows/wind_dir.json",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "scale": 0.4,
+          "minrotationspeed": 0.5,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Samdrupjongkhar",
+            "dx": 29,
+            "dy": 452
+          }
+        },
+        {
+          "qid": "wind_numbers",
+          "layer_type": "number",
+          "css": "numbers/integers_wind.css",
+          "parameter": "WindSpeedMS",
+          "label": "json:numbers/integers_wind.json",
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Samdrupjongkhar",
+            "dx": 25,
+            "dy": 451
+          }
+        }
+      ]
+    },
+    {
+      "qid": "map_20",
+      "attributes": {
+        "id": "view20"
+      },
+      "layers": [
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "Tashigang",
+          "attributes": {
+            "x": 706,
+            "y": 680,
+            "font-size": 16,
+            "text-anchor": "middle"
+          }
+        },
+        {
+          "qid": "temperature-weathersymbols",
+          "layer_type": "symbol",
+          "symbols": "json:symbols/smartsymbol.json",
+          "parameter": "smartsymbol",
+          "scale": 2,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Trashigang",
+            "dx": 148,
+            "dy": 502
+          }
+        },
+        {
+          "qid": "temperature-numbers",
+          "layer_type": "number",
+          "numbers": "json:numbers/temperatures.json",
+          "css": "numbers/integers_9.css",
+          "parameter": "Temperature",
+          "label": "json:numbers/integers_9.json",
+          "attributes": {
+            "font-size": 16,
+            "text-anchor": "middle"
+          },
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Trashigang",
+            "dx": 124,
+            "dy": 578
+          }
+        },
+        {
+          "qid": "wind_symbols",
+          "layer_type": "arrow",
+          "arrows": "json:arrows/wind_dir.json",
+          "direction": "WindDirection",
+          "speed": "WindSpeedMS",
+          "scale": 0.4,
+          "minrotationspeed": 0.5,
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Trashigang",
+            "dx": 173,
+            "dy": 573
+          }
+        },
+        {
+          "qid": "wind_numbers",
+          "layer_type": "number",
+          "css": "numbers/integers_wind.css",
+          "parameter": "WindSpeedMS",
+          "label": "json:numbers/integers_wind.json",
+          "positions": {
+            "layout": "keyword",
+            "keyword": "Trashigang",
+            "dx": 170,
+            "dy": 572
+          }
+        },
+        {
+          "layer_type": "tag",
+          "tag": "text",
+          "cdata": "National Centre for Hydrology and Meteorology",
+          "attributes": {
+            "x": 402,
+            "y": 880,
+            "font-size": 16,
+            "text-anchor": "middle"
+          }
+        }
+      ]
+    }
+  ]
+}

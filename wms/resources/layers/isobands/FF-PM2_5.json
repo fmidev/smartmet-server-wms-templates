@@ -1,0 +1,57 @@
+[
+  {
+    "qid": "wildfire_pm25_01_1",
+    "lolimit": 0.1,
+    "hilimit": 1,
+    "attributes": {
+      "class": "wildfire_pm25_01_1"
+    }
+  },
+  {
+    "qid": "wildfire_pm25_1_10",
+    "lolimit": 1,
+    "hilimit": 10,
+    "attributes": {
+      "class": "wildfire_pm25_1_10"
+    }
+  },
+  {
+    "qid": "wildfire_pm25_10_25",
+    "lolimit": 10,
+    "hilimit": 25,
+    "attributes": {
+      "class": "wildfire_pm25_10_25"
+    }
+  },
+  {
+    "qid": "wildfire_pm25_25_50",
+    "lolimit": 25,
+    "hilimit": 50,
+    "attributes": {
+      "class": "wildfire_pm25_25_50"
+    }
+  },
+  {
+    "qid": "wildfire_pm25_50_75",
+    "lolimit": 50,
+    "hilimit": 75,
+    "attributes": {
+      "class": "wildfire_pm25_50_75"
+    }
+  },
+  {
+    "qid": "wildfire_pm25_75_200",
+    "lolimit": 75,
+    "hilimit": 200,
+    "attributes": {
+      "class": "wildfire_pm25_75_200"
+    }
+  },
+  {
+    "qid": "wildfire_pm25_200",
+    "lolimit": 200,
+    "attributes": {
+      "class": "wildfire_pm25_200"
+    }
+  }
+]

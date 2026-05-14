@@ -1,0 +1,20 @@
+[
+  { "value": 1,  "symbol": "weather/smartsymboltext/day/1" },
+  { "value": 2,  "symbol": "weather/smartsymboltext/day/2" },
+  { "value": 4,  "symbol": "weather/smartsymboltext/day/4" },
+  { "value": 6,  "symbol": "weather/smartsymboltext/day/6" },
+  { "value": 7,  "symbol": "weather/smartsymboltext/day/7" },
+  { "value": 9,  "symbol": "weather/smartsymboltext/day/9" },
+  { "value": 11, "symbol": "weather/smartsymboltext/day/11" },
+  { "value": 14, "symbol": "weather/smartsymboltext/day/14" },
+  { "value": 17, "symbol": "weather/smartsymboltext/day/17" },
+  { "value": 21, "symbol": "weather/smartsymboltext/day/21" },
+  { "value": 24, "symbol": "weather/smartsymboltext/day/24" },
+  { "value": 27, "symbol": "weather/smartsymboltext/day/27" },
+  { "value": 31, "symbol": "weather/smartsymboltext/day/31" },
+  { "value": 32, "symbol": "weather/smartsymboltext/day/32" },
+  { "value": 51, "symbol": "weather/smartsymboltext/day/51" },
+  { "value": 52, "symbol": "weather/smartsymboltext/day/52" },
+  { "value": 61, "symbol": "weather/smartsymboltext/day/61" },
+  { "value": 71, "symbol": "weather/smartsymboltext/day/71" }
+]

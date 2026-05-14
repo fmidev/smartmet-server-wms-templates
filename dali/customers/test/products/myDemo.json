@@ -1,0 +1,257 @@
+
+{
+ "title": "Demo",
+ "abstract": "Longer description",
+ "width": 1200,
+ "height": 1600,
+ "refs": "json:products/map_product_refs.json",
+ "defs": "json:products/common_defs.json",
+ "projection": {
+   "xsize": 600,
+   "ysize": 800,
+   "crs": "EPSG:4326",
+   "x1": 18,
+   "y1": 58,
+   "x2": 33,
+   "y2": 71
+ },
+ "views": [
+   {
+     "qid": "map_1",
+     "attributes": {
+       "transform": "translate(0 0)"
+     },
+     "layers": [
+       {
+         "qid": "temperature_visualization_1",
+         "producer": "gfs",
+         "layer_type": "isoband",
+         "parameter": "temperature",
+         "isobands": "json:isobands/Temperature.json",
+         "css": "isobands/Temperature.css",
+         "attributes": {
+           "shape-rendering": "crispEdges"
+         }
+       },
+       {
+         "qid": "temperature_numbers_1",
+         "producer": "gfs",
+         "layer_type": "number",
+         "css": "numbers/numbers.css",
+         "parameter": "temperature",
+         "label": {
+           "dx": 0,
+           "dy": 3,
+           "precision": 0,
+           "missing": "-"
+         },
+         "positions": {
+           "x": 20,
+           "y": 18,
+           "dx": 30,
+           "dy": 30,
+           "ddx": 15
+         }
+       },
+       {
+         "qid": "city_marker_1",
+         "layer_type": "symbol",
+         "positions": {
+           "layout": "latlon",
+           "locations": [
+             {
+               "longitude": 24.93417,
+               "latitude": 60.17556
+             }
+           ],
+           "dx": 0,
+           "dy": 0
+         },
+         "symbol": "dot",
+         "scale": 5
+       },
+       "ref:refs.Europe_boundaries"
+
+     ]
+   },
+   {
+     "qid": "map_2",
+     "attributes": {
+       "id": "view2",
+       "transform": "translate(600 000)"
+     },
+     "layers": [
+       {
+         "qid": "WindSpeed-number",
+         "producer": "gfs",
+         "layer_type": "number",
+         "css": "numbers/numbers.css",
+         "parameter": "WindSpeedMS",
+         "label": {
+           "dx": 0,
+           "dy": 3,
+           "precision": 1,
+           "missing": "-"
+         },
+         "positions": {
+           "x": 5,
+           "y": 8,
+           "dx": 50,
+           "dy": 50,
+           "ddx": 21
+         }
+       },
+       {
+         "qid": "wind_arrow",
+         "producer": "gfs",
+         "layer_type": "arrow",
+         "css": "arrows/windarrow.css",
+         "u": "WindUMS",
+         "v": "WindVMS",
+         "attributes": {
+           "id": "wind_arrows",
+           "class": "WindArrow"
+         },
+         "arrows": "json:arrows/windarrow.json",
+         "positions": {
+           "x": 12,
+           "y": 20,
+           "dx": 50,
+           "dy": 50,
+           "ddx": 21
+         }
+       },
+       {
+         "layer_type": "symbol",
+         "positions": {
+           "layout": "latlon",
+           "locations": [
+             {
+               "longitude": 24.93417,
+               "latitude": 60.17556
+             }
+           ],
+           "dx": 0,
+           "dy": 0
+         },
+         "symbol": "dot",
+         "scale": 5
+       },
+       "ref:refs.Europe_boundaries"
+     ]
+   },
+   {
+     "qid": "map_3",
+     "attributes": {
+       "id": "view3",
+       "transform": "translate(0 800)"
+     },
+     "layers": [
+       "ref:refs.Europe_boundaries",
+       {
+         "qid": "weathersymbol-1",
+         "producer": "gfs",
+         "layer_type": "symbol",
+         "css": "symbols/smartweather.css",
+         "symbols": "json:symbols/smartweather.json",
+         "parameter": "smartsymbol",
+         "scale": 1.4,
+         "positions": {
+           "layout": "latlon",
+           "locations": [
+             {
+               "longitude": 24.941325,
+               "latitude": 60.173437
+             },
+             {
+               "longitude": 22.264824,
+               "latitude": 60.45451
+             },
+             {
+               "longitude": 25.747257,
+               "latitude": 62.242603
+             },
+             {
+               "longitude": 25.726967,
+               "latitude": 66.503059
+             },
+             {
+               "longitude": 25.469885,
+               "latitude":  65.021545
+             },
+             {
+               "longitude": 29.736916,
+               "latitude":  62.607662
+             },
+             {
+               "longitude": 27.414838,
+               "latitude":  68.419817
+             }
+           ],
+           "dx": 0,
+           "dy": 0
+         },
+         "attributes": {
+           "id": "weather_1",
+           "class": "Weather"
+         }
+       }
+     ]
+   },
+   {
+     "time_offset": 360,
+     "qid": "map_4",
+     "attributes": {
+       "id": "view4",
+       "transform": "translate(600 800)"
+     },
+     "layers": [
+       {
+         "qid": "temperature_visualization_4",
+         "producer": "gfs",
+         "layer_type": "isoband",
+         "parameter": "temperature",
+         "isobands": "json:isobands/Temperature.json",
+         "css": "isobands/Temperature.css"
+       },
+       {
+         "qid": "Temperature-numbers-4",
+         "producer": "gfs",
+         "layer_type": "number",
+         "css": "numbers/numbers.css",
+         "parameter": "temperature",
+         "label": {
+           "dx": 0,
+           "dy": 3,
+           "precision": 0,
+           "missing": "-"
+         },
+         "positions": {
+           "x": 20,
+           "y": 18,
+           "dx": 30,
+           "dy": 30,
+           "ddx": 15
+         }
+       },
+       {
+         "layer_type": "symbol",
+         "positions": {
+           "layout": "latlon",
+           "locations": [
+             {
+               "longitude": 24.93417,
+               "latitude": 60.17556
+             }
+           ],
+           "dx": 0,
+           "dy": 0
+         },
+         "symbol": "dot",
+         "scale": 5
+       },
+       "ref:refs.Europe_boundaries"
+     ]
+   }
+ ]
+}

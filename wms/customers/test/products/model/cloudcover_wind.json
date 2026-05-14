@@ -1,0 +1,107 @@
+{
+  "title": "Cloud cover with wind (Finland)",
+  "abstract": "Total cloud cover as isobands with wind arrows and sparse wind speed numbers, clipped to Finland",
+  "projection": {
+    "crs": "EPSG:4326",
+    "x1": 19,
+    "y1": 59,
+    "x2": 32,
+    "y2": 71,
+    "xsize": 600,
+    "ysize": 1200
+  },
+  "defs": {
+    "layers": [
+      {
+        "tag": "clipPath",
+        "attributes": {
+          "id": "finland_clip"
+        },
+        "layers": [
+          {
+            "qid": "finland_shape",
+            "layer_type": "map",
+            "map": {
+              "schema": "esri",
+              "table": "finland_country_wgs84"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "views": [{
+    "layers": [
+      {
+        "tag": "g",
+        "attributes": {
+          "clip-path": "url(#finland_clip)"
+        },
+        "layers": [
+          {
+            "qid": "l",
+            "layer_type": "isoband",
+            "parameter": "TotalCloudCover",
+            "isobands": "json:isobands/totalcloudcover.json",
+            "css": "isobands/totalcloudcover.css",
+            "attributes": {
+              "shape-rendering": "crispEdges"
+            }
+          },
+          {
+            "qid": "wind",
+            "layer_type": "arrow",
+            "arrows": "json:wind/arrows/windarrow.json",
+            "css": "wind/arrows/windarrow.css",
+            "direction": "WindDirection",
+            "speed": "WindSpeedMS",
+            "scale": 1.0,
+            "attributes": {
+              "id": "wind_arrows",
+              "class": "WindArrow"
+            },
+            "positions": {
+              "x": 30,
+              "y": 30,
+              "dx": 60,
+              "dy": 60,
+              "ddx": 30
+            }
+          },
+          {
+            "qid": "wind_speed",
+            "layer_type": "number",
+            "parameter": "WindSpeedMS",
+            "label": {
+              "missing": "-",
+              "precision": 0,
+              "dx": 8,
+              "dy": 3
+            },
+            "positions": {
+              "x": 60,
+              "y": 60,
+              "dx": 120,
+              "dy": 120,
+              "ddx": 60
+            }
+          }
+        ]
+      },
+      {
+        "qid": "borders",
+        "layer_type": "map",
+        "css": "maps/map.css",
+        "map": {
+          "lines": true,
+          "schema": "esri",
+          "table": "europe_country_wgs84",
+          "minarea": 15
+        },
+        "attributes": {
+          "class": "Border"
+        }
+      }
+    ]
+  }]
+}
