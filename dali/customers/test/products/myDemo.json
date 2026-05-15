@@ -27,8 +27,8 @@
          "producer": "gfs",
          "layer_type": "isoband",
          "parameter": "temperature",
-         "isobands": "json:isobands/Temperature.json",
-         "css": "isobands/Temperature.css",
+         "isobands": "json:isobands/Temperature_05.json",
+         "css": "isobands/Temperature_05.css",
          "attributes": {
            "shape-rendering": "crispEdges"
          }
